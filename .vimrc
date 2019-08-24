@@ -24,3 +24,4 @@ nnoremap # #zz
 
 " Replace word under cursor with leader key
 :nnoremap <Leader>s :%s/\<<C-r><C-w>\>/
+set background=dark
