@@ -1,7 +1,10 @@
+"Yank to Windows clipboard
+nnoremap y "*y
+vnoremap y "*y
 
 set nocompatible          " get rid of Vi compatibility mode. SET FIRST!
 
-"start searching immediately and ignorce case
+"start searching immediately and ignore case
 set incsearch
 set ic
 
