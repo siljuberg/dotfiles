@@ -1,6 +1,6 @@
 "Yank to Windows clipboard
-nnoremap y "*y
-vnoremap y "*y
+nnoremap y "*y | y
+vnoremap y "*y | y
 
 set nocompatible          " get rid of Vi compatibility mode. SET FIRST!
 

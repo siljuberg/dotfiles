@@ -1,0 +1,1 @@
+reg add "HKEY_CLASSES_ROOT\Unknown\shell\openas\command" /v "ASDF" /t DWORD /d "TEST" /f
