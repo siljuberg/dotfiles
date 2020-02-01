@@ -1,7 +1,8 @@
+set clipboard=unnamed
 "Yank to Windows clipboard
-nnoremap y "*y | y
-vnoremap y "*y | y
-
+"nnoremap y "*y | y
+"vnoremap y "*y | y
+asdgasgsag
 set nocompatible          " get rid of Vi compatibility mode. SET FIRST!
 
 "start searching immediately and ignore case

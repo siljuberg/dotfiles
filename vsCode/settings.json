@@ -5,6 +5,7 @@
     "python.pythonPath": "C:\\Users\\msiljuberg\\AppData\\Local\\Enthought\\Canopy32\\edm\\envs\\User\\python.exe",
     "window.zoomLevel": 1,
     "files.autoSave": "afterDelay",
+    "vim.useSystemClipboard": true,
     "vim.vimrc.enable": true,
     "vim.vimrc.path": "C:\\Users\\msiljuberg\\.cfg\\.vimrc"
 }
