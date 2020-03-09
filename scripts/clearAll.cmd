@@ -3,6 +3,7 @@ cmd /c "taskkill /F >nul 2>nul /im explorer.exe && start C:\Windows\explorer.exe
 taskkill /F /im chrome.exe
 cmd /c 'taskkill /F /im chrome.exe && start "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"'
 
+taskkill /IM "Everything.exe" /F >nul 2>nul
 rem taskkill /IM "notepad++.exe" /F >nul 2>nul
 rem taskkill /IM "chrome.exe" /F
 rem taskkill /IM "OUTLOOK.exe" /F

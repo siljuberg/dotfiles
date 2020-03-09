@@ -5,6 +5,8 @@ RAlt::AppsKey
 +CapsLock::CapsLock
 CapsLock::Enter
 
+#Y::Run explorer.exe %USERPROFILE%\.cfg
++#Y:: Sendinput, %USERPROFILE%\.cfg
 #F::Run explorer.exe "%USERPROFILE%\Google Drive"
 +#F:: Sendinput, %USERPROFILE%\Google Drive
 #W::Run explorer.exe "%USERPROFILE%\DOWNLOADS"
