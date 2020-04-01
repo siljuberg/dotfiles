@@ -27,8 +27,8 @@ vnoremap // y/<C-R>"<CR>
 "Delete into black hole register by default
 nnoremap x "_x
 vnoremap x "_x
-vnoremap d "_d
-nnoremap d "_d
+"vnoremap d "_d
+"nnoremap d "_d
 xnoremap p "_dP
 
 "Center screen after moving

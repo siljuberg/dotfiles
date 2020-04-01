@@ -3,7 +3,10 @@
 
 RAlt::AppsKey
 +CapsLock::CapsLock
-CapsLock::Enter
+CapsLock::Enter	
+
+; **** ctrl V and enter:
+;CapsLock::Send ^v {Enter}	
 
 #Y::Run explorer.exe %USERPROFILE%\.cfg
 +#Y:: Sendinput, %USERPROFILE%\.cfg
@@ -34,3 +37,6 @@ CapsLock::Enter
 #C::Run explorer.exe "E:\P2\"
 +#C:: Sendinput, E:\P2
 
+;***********Text input***********
+;msiljuberg@slb.com
+; tbd
