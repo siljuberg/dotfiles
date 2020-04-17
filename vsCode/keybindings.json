@@ -4,5 +4,10 @@
         "key": "ctrl+f",
         "command": "-extension.vim_ctrl+f",
         "when": "editorTextFocus && vim.active && vim.use<C-f> && !inDebugRepl && vim.mode != 'Insert'"
+    },
+    {
+        "key": "shift+enter",
+        "command": "-editor.action.insertLineAfter",
+        "when": "editorTextFocus && !editorReadonly"
     }
 ]

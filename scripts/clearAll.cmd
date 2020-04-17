@@ -9,12 +9,15 @@ rem start call "C:\Program Files (x86)\Microsoft Office\root\Office16\OUTLOOK.EX
 
 rem cmd /c 'taskkill /F /im OUTLOOK.exe && start "C:\Program Files (x86)\Microsoft Office\root\Office16\OUTLOOK.EXE"'
 
-taskkill /IM "Everything.exe" /F >nul 2>nul
-rem taskkill /IM "notepad++.exe" /F >nul 2>nul
-rem "C:\Program Files (x86)\Microsoft Office\root\Office16\OUTLOOK.EXE"
+rem taskkill /IM "conhost.exe" /F >nul 2>nul
+taskkill /IM "windirstat.exe" /F >nul 2>nul
+taskkill /IM "vim.exe" /F >nul 2>nul
+taskkill /IM "wslhost.exe" /F >nul 2>nul
+taskkill /IM "notepad++.exe" /F >nul 2>nul
 rem taskkill /IM "lync.exe" /F
 rem "C:\Program Files (x86)\Microsoft Office\root\Office16\lync.EXE"
 
+taskkill /IM "Calculator.exe" /F >nul 2>nul
 taskkill /IM "notepad.exe" /F >nul 2>nul
 start "notepad.exe"
 taskkill /IM Code.exe /F >nul 2>nul
@@ -42,6 +45,7 @@ taskkill /IM "OPGFramework.exe" /F >nul 2>nul
 taskkill /IM "Fluiddeftool.exe" /F >nul 2>nul
 
 
+taskkill /IM "gap.exe" /F >nul 2>nul
 taskkill /IM "Slb.Icp.EspDesign.App.exe" /F >nul 2>nul
 taskkill /IM "Slb.OneFluid.Shell.exe" /F >nul 2>nul
 taskkill /IM "SlbLicensing.exe" /F >nul 2>nul
@@ -54,6 +58,7 @@ taskkill /IM "PSPlotX.exe" /F >nul 2>nul
 taskkill /IM "Psim2000.exe" /F >nul 2>nul
 
 
+taskkill /IM "powershell.exe" /F >nul 2>nul
 taskkill /IM "spotify.exe" /F >nul 2>nul
 taskkill /IM "Microsoft.Photos.exe" /F >nul 2>nul
 taskkill /IM "winzip32.exe" /F >nul 2>nul
@@ -65,3 +70,7 @@ taskkill /IM "Taskmgr.exe" /F >nul 2>nul
 
 rem timeout /t 5
 taskkill /IM "cmd.exe" /F >nul 2>nul
+
+
+rem ************ Suspect misbehaviour due to killing:*********
+taskkill /IM "Everything.exe" /F >nul 2>nul

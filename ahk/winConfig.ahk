@@ -30,8 +30,14 @@ CapsLock::Enter
 +#I:: Sendinput, C:\Program Files (x86)\Schlumberger\PIPESIM2012.4\Programs
 #A::Run explorer.exe "D:\tmp"
 +#A:: Sendinput, D:\tmp
+
 #F1::Run explorer.exe "%TEMP%\PIPESIM"
 +#F1:: Sendinput, %TEMP%\PIPESIM
+#F2::Run explorer.exe "%USERPROFILE%\OneDrive - Schlumberger\Documents" ; For pictures stored with windows+shift+S
++#F2:: Sendinput, "%USERPROFILE%\OneDrive - Schlumberger\Documents"	; For pictures stored with windows+shift+S
+#F3::Run explorer.exe %USERPROFILE%
++#F3:: Sendinput, %USERPROFILE%
+
 #s::Run explorer.exe "D:\DIV\setup\SLB\PIPESIM_setup"
 
 #C::Run explorer.exe "E:\P2\"
