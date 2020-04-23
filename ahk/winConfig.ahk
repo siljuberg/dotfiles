@@ -37,6 +37,8 @@ CapsLock::Enter
 +#F2:: Sendinput, "%USERPROFILE%\OneDrive - Schlumberger\Documents"	; For pictures stored with windows+shift+S
 #F3::Run explorer.exe %USERPROFILE%
 +#F3:: Sendinput, %USERPROFILE%
+#F4::Run explorer.exe "%userprofile%\.cfg\shortcuts"
++#F4:: Sendinput, "%userprofile%\.cfg\shortcuts"
 
 #s::Run explorer.exe "D:\DIV\setup\SLB\PIPESIM_setup"
 
