@@ -35,15 +35,11 @@ CapsLock::Enter
 +#F1:: Sendinput, %TEMP%\PIPESIM
 #F2::Run explorer.exe "%USERPROFILE%\OneDrive - Schlumberger\Documents" ; For pictures stored with windows+shift+S
 +#F2:: Sendinput, "%USERPROFILE%\OneDrive - Schlumberger\Documents"	; For pictures stored with windows+shift+S
-<<<<<<< HEAD
 #F3::Run explorer.exe %USERPROFILE%\.cfg
 +#F3:: Sendinput, %USERPROFILE%\.cfg
 #F4::Run explorer.exe "%userprofile%\.cfg\shortcuts"
 +#F4:: Sendinput, "%userprofile%\.cfg\shortcuts"
 =======
-#F3::Run explorer.exe %USERPROFILE%
-+#F3:: Sendinput, %USERPROFILE%
->>>>>>> parent of 91b9143... a
 
 ;#F11:: Sendinput, 
 #F12::Run %_MSCRIPT%\clearAll.cmd

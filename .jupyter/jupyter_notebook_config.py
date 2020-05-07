@@ -1,4 +1,4 @@
-c.NotebookApp.browser = u"C:/Program Files/Mozilla Firefox/firefox.exe %s"
+#c.NotebookApp.browser = u"C:/Program Files/Mozilla Firefox/firefox.exe %s"
 c.NotebookApp.notebook_dir = u"D:\OD\DEV\jupyter"
 
 # Configuration file for jupyter-notebook.

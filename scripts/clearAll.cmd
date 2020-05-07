@@ -1,5 +1,5 @@
 @echo off
-<<<<<<< HEAD
+
 cmd /c taskkill /F >nul 2>nul /im explorer.exe && start C:\Windows\explorer.exe
 
 
@@ -10,7 +10,7 @@ cmd /c "taskkill /F >nul 2>nul /im explorer.exe && start C:\Windows\explorer.exe
 taskkill /F /im chrome.exe
 start call C:\Program Files (x86)\Google\Chrome\Application\chrome.exe'
 
-<<<<<<< HEAD
+
 **************** OUTLOOK ************************************************
 **** Muligens treig
 taskkill /IM OUTLOOK.exe /F
@@ -70,7 +70,6 @@ taskkill /IM MicrosoftEdge.exe /F >nul 2>nul
 
 taskkill /IM Microsoft.Photos.exe /F >nul 2>nul
 taskkill /IM mmc.exe /F >nul 2>nul
-<<<<<<< HEAD
 taskkill /IM mspaint.exe /F >nul 2>nul
 taskkill /IM ScreenSketch.exe /F >nul 2>nul
 taskkill /IM FoxitReader.exe /F >nul 2>nul
@@ -150,14 +149,12 @@ taskkill /IM "SystemSettings.exe" /F >nul 2>nul
 
 taskkill /IM "Taskmgr.exe" /F >nul 2>nul
 
-<<<<<<< HEAD
 rem timeout /t 1
 
 taskkill /IM cmd.exe /F >nul 2>nul
 =======
 rem timeout /t 5
 taskkill /IM "cmd.exe" /F >nul 2>nul
->>>>>>> parent of 91b9143... a
 
 
 rem ************ Suspect misbehaviour due to killing:*********
