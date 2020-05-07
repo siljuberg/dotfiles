@@ -6,7 +6,6 @@ cmd /c taskkill /F >nul 2>nul /im explorer.exe && start C:\Windows\explorer.exe
 **************** CHROME ************************************************
 
 cmd /c "taskkill /F >nul 2>nul /im explorer.exe && start C:\Windows\explorer.exe"
->>>>>>> parent of 91b9143... a
 taskkill /F /im chrome.exe
 start call C:\Program Files (x86)\Google\Chrome\Application\chrome.exe'
 
