@@ -39,7 +39,7 @@ CapsLock::Enter
 +#F3:: Sendinput, %USERPROFILE%\.cfg
 #F4::Run explorer.exe "%userprofile%\.cfg\shortcuts"
 +#F4:: Sendinput, "%userprofile%\.cfg\shortcuts"
-=======
+
 
 ;#F11:: Sendinput, 
 #F12::Run %_MSCRIPT%\clearAll.cmd

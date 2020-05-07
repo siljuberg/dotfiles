@@ -4,7 +4,7 @@ cmd /c taskkill /F >nul 2>nul /im explorer.exe && start C:\Windows\explorer.exe
 
 
 **************** CHROME ************************************************
-=======
+
 cmd /c "taskkill /F >nul 2>nul /im explorer.exe && start C:\Windows\explorer.exe"
 >>>>>>> parent of 91b9143... a
 taskkill /F /im chrome.exe
@@ -46,7 +46,7 @@ taskkill /IM depends.exe /F >nul 2>nul
 taskkill /IM Calculator.exe /F >nul 2>nul
 taskkill /IM notepad.exe /F >nul 2>nul
 rem start notepad.exe
-=======
+
 taskkill /IM "OUTLOOK.exe" /F
 start call "C:\Users\msiljuberg\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\OUTLOOK.EXE - Shortcut.lnk"
 rem start call "C:\Program Files (x86)\Microsoft Office\root\Office16\OUTLOOK.EXE"
@@ -64,7 +64,7 @@ rem "C:\Program Files (x86)\Microsoft Office\root\Office16\lync.EXE"
 taskkill /IM "Calculator.exe" /F >nul 2>nul
 taskkill /IM "notepad.exe" /F >nul 2>nul
 start "notepad.exe"
->>>>>>> parent of 91b9143... a
+
 taskkill /IM Code.exe /F >nul 2>nul
 taskkill /IM MicrosoftEdge.exe /F >nul 2>nul
 
@@ -105,7 +105,7 @@ taskkill /IM Microsoft.Photos.exe /F >nul 2>nul
 taskkill /IM winzip32.exe /F >nul 2>nul
 taskkill /IM hh.exe /F >nul 2>nul
 taskkill /IM SystemSettings.exe /F >nul 2>nul
-=======
+
 taskkill /IM "mspaint.exe" /F >nul 2>nul
 taskkill /IM "ScreenSketch.exe" /F >nul 2>nul
 taskkill /IM "FoxitReader.exe" /F >nul 2>nul
@@ -145,14 +145,14 @@ taskkill /IM "winzip32.exe" /F >nul 2>nul
 taskkill /IM "devenv.exe" /F >nul 2>nul
 taskkill /IM "hh.exe" /F >nul 2>nul
 taskkill /IM "SystemSettings.exe" /F >nul 2>nul
->>>>>>> parent of 91b9143... a
+
 
 taskkill /IM "Taskmgr.exe" /F >nul 2>nul
 
 rem timeout /t 1
 
 taskkill /IM cmd.exe /F >nul 2>nul
-=======
+
 rem timeout /t 5
 taskkill /IM "cmd.exe" /F >nul 2>nul
 
