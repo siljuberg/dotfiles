@@ -1,11 +1,7 @@
 ;***********GENERAL***********
-
 RAlt::AppsKey
 +CapsLock::CapsLock
-CapsLock::Enter	
-
-
-; **** ctrl V and enter:
+CapsLock::Enter
 
 #Y::Run explorer.exe %USERPROFILE%\.cfg
 +#Y:: Sendinput, %USERPROFILE%\.cfg
@@ -17,8 +13,6 @@ CapsLock::Enter
 +#M:: Sendinput, %USERPROFILE%\Google Drive\mba
 #O::Run explorer.exe "%USERPROFILE%\økonomi"
 #Z::Run explorer.exe "%USERPROFILE%"
-
-
 
 ;***********WORK***********
 #E::Run explorer.exe "D:\OD\TIC"
@@ -55,14 +49,33 @@ Send %Clipboard%
 Send {Enter}
 return
 ;***********
-;***********Copy highlighted text, open D:\OD\TIC and create folder with highlighted text (mine) ***********
+;***********Copy highlighted text, open D:\OD\TIC and create folder with highlighted text ***********
 #^e::
 Send ^c
+sleep, 100
 Run "D:\OD\TIC"
+sleep, 100
 Send ^+n
+sleep, 100
 Send, ^v
-Send, {Backspace}
+sleep, 400
+;Send, {Backspace}
+sleep, 400
 Send, "_"
+Return
+;***********
+;***********
+;***********Copy highlighted text, open D:\OD\TIC and search for highlighted text (ticket number) ***********
+#^+e::
+Send ^c
+sleep, 100
+Run "D:\OD\TIC"
+sleep, 100
+Send ^f
+sleep, 100
+Send, ^v
+sleep, 400
+;Send, {Enter}
 Return
 ;***********
 ;***********Copy highlighted text and execute in Windows Run ***********
@@ -79,11 +92,48 @@ Run "C:\Program Files (x86)\Notepad++\notepad++.exe" "%USERPROFILE%\.cfg\ahk\win
 Send,^s
 Reload
 return
-;**************Pass highlighted text to Google Chrome ( works for search text and URL) ******************
+;***********
+;**************Pass highlighted text to Google Chrome******************
+; The second line works for searches and the first works for URL's
 #^g::
 Send, ^c
-parameter = C:\Program Files (x86)\Google\Chrome\Application\chrome.exe "%clipboard%"
-;parameter = C:\Program Files (x86)\Google\Chrome\Application\chrome.exe https://www.google.com/search?q="%clipboard%"
+;parameter = C:\Program Files (x86)\Google\Chrome\Application\chrome.exe "%clipboard%"
+parameter = C:\Program Files (x86)\Google\Chrome\Application\chrome.exe https://www.google.com/search?q="%clipboard%"
+Run %parameter%
+return
+;***********
+;**************Pass highlighted text to ldap******************
+; The second line works for searches and the first works for URL's
+#^l::
+Send, ^c
+parameter = C:\Program Files (x86)\Google\Chrome\Application\chrome.exe https://directory.slb.com/query.cgi?query="%clipboard%"
 Run %parameter%
 return
 
+;************** To pause and exit the script ****************************
+Pause:: Pause
+;Escape:: ExitApp
+Return
+
+
+;****Copy and (alt-d) search for text in notepad++ ***********
+#^z::
+Send,^c
+WinActivate ahk_exe notepad++.exe
+sleep, 200
+Send,^f
+sleep, 200
+Send,^v
+Send,!o
+Reload
+return
+;***********
+
+
+;**** Open OLGA variable selector***********
+#^x::
+MouseClick, right
+Send, e
+Send, {enter}
+return
+;***********

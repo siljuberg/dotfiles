@@ -19,11 +19,12 @@ rem taskkill /IM "Skype Meetings App.exe" /F
 rem C:\Program Files (x86)\Microsoft Office\root\Office16\lync.EXE
 
 ****** Frequently switched ************************************
-rem taskkill /IM devenv.exe /F >nul 2>nul
+taskkill /IM mstsc.exe /F >nul 2>nul
+taskkill /IM devenv.exe /F >nul 2>nul
 taskkill /IM powershell.exe /F >nul 2>nul
 taskkill /IM Teams.exe /F >nul 2>nul
 taskkill /IM Taskmgr.exe /F >nul 2>nul
-rem taskkill /IM notepad++.exe /F >nul 2>nul
+taskkill /IM notepad++.exe /F >nul 2>nul
 taskkill /IM procmon64.exe /F >nul 2>nul
 ************************************************************************
 
@@ -57,11 +58,8 @@ rem taskkill /IM "conhost.exe" /F >nul 2>nul
 taskkill /IM "windirstat.exe" /F >nul 2>nul
 taskkill /IM "vim.exe" /F >nul 2>nul
 taskkill /IM "wslhost.exe" /F >nul 2>nul
-taskkill /IM "notepad++.exe" /F >nul 2>nul
 
 taskkill /IM "Calculator.exe" /F >nul 2>nul
-taskkill /IM "notepad.exe" /F >nul 2>nul
-start "notepad.exe"
 
 taskkill /IM Code.exe /F >nul 2>nul
 taskkill /IM MicrosoftEdge.exe /F >nul 2>nul
