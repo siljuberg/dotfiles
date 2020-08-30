@@ -80,7 +80,7 @@ Run "D:\OD\TIC"
 sleep, 170
 Send ^+n
 Send {enter}
-sleep, 150
+sleep, 350
 Send {enter}
 sleep, 850
 Send +{Tab}
@@ -178,31 +178,31 @@ return
 ;***********
 
 
-;;**** Open keypirinha ***********
-;; Currently disabled
-;
-;~LCtrl::
-;if !Triggered
-;{
-;  TimeNow := A_TickCount
-;  Triggered := 1
-;}
-;Return
-;
-;~LCtrl Up::
-;if (A_PriorKey = "LControl") and (TimeNow > 0) and (A_TickCount - TimeNow < 250) {
-;   if WinActive("ahk_class keypirinha_wndcls_run") {
-;		Send,^c
-;		;Next line is hardcoded to current keypirinha shortcut for starting and pasting text from clipboard
-;        ;Send ^!#k
-;		Run %Keypirinha% --hide
-;         }
-;   else {
-;		Send,^c
-;		;Next line is hardcoded to current keypirinha shortcut for starting and pasting text from clipboard
-;		;Send ^!#k
-;        Run %Keypirinha% --show
-;   }
-;}
-;Triggered := 0
-;Return
+;**** Open keypirinha ***********
+; Currently disabled
+
+~LCtrl::
+if !Triggered
+{
+  TimeNow := A_TickCount
+  Triggered := 1
+}
+Return
+
+~LCtrl Up::
+if (A_PriorKey = "LControl") and (TimeNow > 0) and (A_TickCount - TimeNow < 250) {
+   if WinActive("ahk_class keypirinha_wndcls_run") {
+		Send,^c
+		;Next line is hardcoded to current keypirinha shortcut for starting and pasting text from clipboard
+        ;Send ^!#k
+		Run %Keypirinha% --hide
+         }
+   else {
+		Send,^c
+		;Next line is hardcoded to current keypirinha shortcut for starting and pasting text from clipboard
+		;Send ^!#k
+        Run %Keypirinha% --show
+   }
+}
+Triggered := 0
+Return
