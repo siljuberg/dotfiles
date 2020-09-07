@@ -1,7 +1,17 @@
 @echo off
 
-cmd /c taskkill /F >nul 2>nul /im explorer.exe && start C:\Windows\explorer.exe
+**************** Explorer ************************************************
+**Disabled due to suspected misbehaviour
+** cmd /c taskkill /F >nul 2>nul /im explorer.exe && start C:\Windows\explorer.exe
 
+**************** Service dependent processses************************************************
+** Probably also kills the service(defined as process), hence should not be killed.
+** Same for keypirinha-x64
+** Should probably find a way to just shut down the GUI.
+rem taskkill /IM everything.exe /F >nul 2>nul
+
+
+taskkill /IM SLBLicensing.exe /F >nul 2>nul
 
 **************** CHROME ************************************************
 

@@ -1,3 +1,5 @@
+alias clipboard ='powershell.exe Get-Clipboard'
+
 # some more ls aliases
 alias ll='ls -alF'
 alias la='ls -la'
