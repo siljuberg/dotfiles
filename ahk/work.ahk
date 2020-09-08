@@ -41,7 +41,7 @@ return
 ;******* Misc. TIC related ***********
 ;*************************************
 
-;#E::Run explorer.exe "D:\OD\TIC"
+#E::Run explorer.exe "D:\OD\TIC"
 +#E:: Sendinput, D:\OD\TIC
 
 
@@ -72,8 +72,7 @@ Return
 ;***********
 ;***********
 ;***********Copy Tic Number from URL, open D:\OD\TIC and search for highlighted text (tic number) ***********
-;#^+e::
-#e::
+#^+e::
 Send, !d
 Send, {End}
 Send, ^+{Left}
