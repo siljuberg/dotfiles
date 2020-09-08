@@ -4,8 +4,6 @@
 ;****** ! - Alt
 ;***********
 ;***********WORK***********
-#E::Run explorer.exe "D:\OD\TIC"
-+#E:: Sendinput, D:\OD\TIC
 #U::Run explorer.exe "C:\Program Files\Schlumberger\PIPESIM2019.3\Programs"
 +#U:: Sendinput, C:\Program Files\Schlumberger\PIPESIM2019.3\Programs
 ;#I::Run explorer.exe "C:\Program Files (x86)\Schlumberger\PIPESIM2012.4\Programs"
@@ -39,15 +37,22 @@ Send {End}
 Send {Home}	
 Send {enter}
 return
+;*************************************
+;******* Misc. TIC related ***********
+;*************************************
 
-;***********Copy Ticket Number from URL, create folder in D:\OD\TIC and add to quick access ***********
+;#E::Run explorer.exe "D:\OD\TIC"
++#E:: Sendinput, D:\OD\TIC
+
+
+;***********Copy Tic Number from URL, create folder in D:\OD\TIC and add to quick access ***********
 #^e::
 Send, !d
-sleep, 350
+
 Send, {End}
-sleep, 350
+
 Send, ^+{Left}
-sleep, 350
+
 Send ^c
 foldername = %clipboard%_
 newDir = D:\OD\TIC\%clipboard%_
@@ -62,17 +67,34 @@ Send {enter}
 Send !{Up}
 Send {F2}
 Send {End}
+Send, {Enter}
 Return
 ;***********
 ;***********
-;***********Copy highlighted text, open D:\OD\TIC and search for highlighted text (ticket number) ***********
-#^+e::
+;***********Copy Tic Number from URL, open D:\OD\TIC and search for highlighted text (tic number) ***********
+;#^+e::
+#e::
+Send, !d
+Send, {End}
+Send, ^+{Left}
 Send ^c
 Run "D:\OD\TIC"
 WinWaitActive TIC
+Sleep, 50
 Send ^f
+Sleep, 350
 Send, ^v
-;Send, {Enter}
+Sleep, 500
+Send, {Enter}
+WinWaitActive %clipboard%
+Send, {Tab}
+Send, {Down}
+Send, +{F10}
+Sleep, 350
+Send, {Up}
+Send, {Up}
+Send, {Enter}
+Send, {Enter}
 Return
 ;***********
 ;**** Open OLGA variable selector***********

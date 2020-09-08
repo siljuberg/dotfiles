@@ -50,7 +50,7 @@ Return
 ;***********
 ;****Open, Save and Reload ahk script:***********
 #q::
-Run "C:\Program Files (x86)\Notepad++\notepad++.exe" "%USERPROFILE%\.cfg\ahk\winConfig.ahk"
+;Run "C:\Program Files (x86)\Notepad++\notepad++.exe" "%USERPROFILE%\.cfg\ahk\winConfig.ahk"
 Send,^s
 Reload
 return
