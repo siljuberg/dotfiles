@@ -3,6 +3,17 @@
 ;****** + - Shift
 ;****** ! - Alt
 
+; Workaround written in AHK for windows user:
+
+SetTitleMatchMode,2
+while(true){
+WinGetActiveTitle,at
+IfWinActive,ahk_class Notepad++,Keep this file in editor?
+send,n
+WinWaitNotActive,% at
+}
+
+
 SetWorkingDir, %userprofile%\.cfg\ahk
 #Include work.ahk
 
@@ -22,11 +33,11 @@ CapsLock::Enter
 +#F:: Sendinput, %USERPROFILE%\Google Drive
 #W::Run explorer.exe "%USERPROFILE%\DOWNLOADS"
 +#W:: Sendinput, %USERPROFILE%\DOWNLOADS
-#M::Run explorer.exe "%USERPROFILE%\Google Drive\mba"
-+#M:: Sendinput, %USERPROFILE%\Google Drive\mba
 #O::Run explorer.exe "%USERPROFILE%\økonomi"
 #Z::Run explorer.exe "%USERPROFILE%"
 
+
+#M:: Sendinput, msiljuberg@slb.com
 
 ;***********Copy highlighted text and execute in cmd ***********
 #^q::
