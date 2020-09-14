@@ -4,10 +4,9 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "pst_2019.3",
+            "label": "pst_2020.1",
             "type": "shell",
-            "command": "C:\\Program Files\\Schlumberger\\PIPESIM2019.3\\Programs\\psimstub.exe",
-            "args":["${file}"],
+            "command": "${env:USERPROFILE}\\.cfg\\vsCode\\pst2020.bat '${file}'",
             "problemMatcher": [],
             "group": {
                 "kind": "build",
