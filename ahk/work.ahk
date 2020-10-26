@@ -41,8 +41,8 @@ return
 ;******* Misc. TIC related ***********
 ;*************************************
 
-#E::Run explorer.exe "D:\OD\TIC"
-+#E:: Sendinput, D:\OD\TIC
+#E::Run explorer.exe %USERPROFILE%
++#E:: Sendinput, %USERPROFILE%
 
 
 ;***********Copy Tic Number from URL, create folder in D:\OD\TIC and add to quick access ***********
