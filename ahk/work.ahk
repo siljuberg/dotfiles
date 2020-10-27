@@ -28,7 +28,7 @@
 ;***********Open PIPESIM temp folder, sort by date modified, select latest***********
 #F1::
 Run explorer.exe "%TEMP%\PIPESIM"
-sleep, 850
+sleep, 1200
 Send {tab}
 Send {enter}
 Send {tab}
