@@ -3,7 +3,11 @@
 ;****** + - Shift
 ;****** ! - Alt
 ;***********
-;***********WORK***********
+;***********Make Calc***********
+
+Launch_App2::Home ;**** Calc => Home
+Media_Prev::End   ;**** <<   => End
+
 #U::Run explorer.exe "C:\Program Files\Schlumberger\PIPESIM2019.3\Programs"
 +#U:: Sendinput, C:\Program Files\Schlumberger\PIPESIM2019.3\Programs
 ;#I::Run explorer.exe "C:\Program Files (x86)\Schlumberger\PIPESIM2012.4\Programs"
