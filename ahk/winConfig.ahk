@@ -3,6 +3,10 @@
 ;****** + - Shift
 ;****** ! - Alt
 
+^Q:
+Sleep 100
+Run, C:\Users\msiljuberg\src\actnPip\actnPip\actnPip.py, "asfd"
+
 ; Workaround written in AHK for windows user:
 
 SetTitleMatchMode,2
@@ -34,7 +38,7 @@ CapsLock::Enter
 #W::Run explorer.exe "%USERPROFILE%\DOWNLOADS"
 +#W:: Sendinput, %USERPROFILE%\DOWNLOADS
 #O::Run explorer.exe "%USERPROFILE%\økonomi"
-#Z::Run explorer.exe "%USERPROFILE%"
+;#Z::Run explorer.exe "%USERPROFILE%"
 
 
 #M:: Sendinput, msiljuberg@slb.com
