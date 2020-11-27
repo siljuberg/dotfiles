@@ -75,8 +75,8 @@ return
 ; The second line works for searches and the first works for URL's
 #^g::
 Send, ^c
-;parameter = C:\Program Files (x86)\Google\Chrome\Application\chrome.exe "%clipboard%"
-parameter = C:\Program Files (x86)\Google\Chrome\Application\chrome.exe https://www.google.com/search?q="%clipboard%"
+;parameter = C:\Program Files\Google\Chrome\Application\chrome.exe "%clipboard%"
+parameter = C:\Program Files\Google\Chrome\Application\chrome.exe https://www.google.com/search?q="%clipboard%"
 Run %parameter%
 return
 ;***********
