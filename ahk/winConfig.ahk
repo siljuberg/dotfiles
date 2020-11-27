@@ -2,10 +2,11 @@
 ;****** ^ - Ctrl
 ;****** + - Shift
 ;****** ! - Alt
+;****** # - Win
 
 ^Q:
 Sleep 100
-Run, C:\Users\msiljuberg\src\actnPip\actnPip\actnPip.py, "asfd"
+;Run, C:\Users\msiljuberg\src\actnPip\actnPip\actnPip.py, "asfd"
 
 ; Workaround written in AHK for windows user:
 
