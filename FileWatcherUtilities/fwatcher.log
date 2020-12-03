@@ -1,0 +1,55 @@
+[03-Dec-20 16:10:44] [Info] Application started.
+[03-Dec-20 16:10:48] [Info] Daemon 'zip' is starting.
+[03-Dec-20 16:10:48] [Info] Daemon 'zip' is started.
+[03-Dec-20 16:11:16] [Info] File or folder renamed 'C:\Users\msiljuberg\Downloads\fws_4.3.0.0_bin_30.zip'.
+[03-Dec-20 16:11:16] [Info] Daemon 'zip' started '"C:\Users\msiljuberg\.cfg\win10\autoExtractZipFiles.bat"' 14712 process with '' arguments and with '' verb. Processes to run: 0.
+[03-Dec-20 16:11:17] [Info] Process 14712 started by 'zip' daemon has exited with exit code 0.
+[03-Dec-20 16:11:17] [Info] File or folder changed 'C:\Users\msiljuberg\Downloads\fws_4.3.0.0_bin_30.zip'.
+[03-Dec-20 16:11:17] [Info] File or folder changed 'C:\Users\msiljuberg\Downloads\fws_4.3.0.0_bin_30.zip'.
+[03-Dec-20 16:11:17] [Info] Daemon 'zip' started '"C:\Users\msiljuberg\.cfg\win10\autoExtractZipFiles.bat"' 3288 process with '' arguments and with '' verb. Processes to run: 1.
+[03-Dec-20 16:11:17] [Info] Daemon 'zip' started '"C:\Users\msiljuberg\.cfg\win10\autoExtractZipFiles.bat"' 340 process with '' arguments and with '' verb. Processes to run: 0.
+[03-Dec-20 16:11:18] [Info] Process 3288 started by 'zip' daemon has exited with exit code 0.
+[03-Dec-20 16:11:18] [Info] Process 340 started by 'zip' daemon has exited with exit code 0.
+[03-Dec-20 16:11:32] [Info] Daemon 'zip' is stopped.
+[03-Dec-20 16:11:32] [Info] All processes have exited.
+[03-Dec-20 16:11:46] [Info] Application stopped.
+[03-Dec-20 16:11:49] [Info] Application started.
+[03-Dec-20 16:11:49] [Info] Daemon 'zip' is starting.
+[03-Dec-20 16:11:49] [Info] Daemon 'zip' is stopped.
+[03-Dec-20 16:11:49] [Error] Daemon 'zip' is stopped. Path '%userprofile%\Downloads' is invalid.
+[03-Dec-20 16:11:49] [Info] All processes have exited.
+[03-Dec-20 16:11:53] [Info] Application started.
+[03-Dec-20 16:11:55] [Info] Daemon 'zip' is starting.
+[03-Dec-20 16:11:55] [Info] Daemon 'zip' is stopped.
+[03-Dec-20 16:11:55] [Error] Daemon 'zip' is stopped. Path '%userprofile%\Downloads' is invalid.
+[03-Dec-20 16:11:59] [Info] All processes have exited.
+[03-Dec-20 16:12:38] [Info] Daemon 'zip' is starting.
+[03-Dec-20 16:12:38] [Info] Daemon 'zip' is stopped.
+[03-Dec-20 16:12:38] [Error] Daemon 'zip' is stopped. Path '%userprofile%\Downloads' is invalid.
+[03-Dec-20 16:12:42] [Info] All processes have exited.
+[03-Dec-20 16:13:04] [Info] Daemon 'zip' is starting.
+[03-Dec-20 16:13:04] [Info] Daemon 'zip' is stopped.
+[03-Dec-20 16:13:04] [Error] Daemon 'zip' is stopped. Path '%userprofile%\Downloads' is invalid.
+[03-Dec-20 16:13:05] [Info] All processes have exited.
+[03-Dec-20 16:13:08] [Info] Application stopped.
+[03-Dec-20 16:13:10] [Info] Application started.
+[03-Dec-20 16:13:10] [Info] Daemon 'zip' is starting.
+[03-Dec-20 16:13:10] [Info] Daemon 'zip' is started.
+[03-Dec-20 16:13:24] [Info] File or folder renamed 'C:\Users\msiljuberg\Downloads\fws_4.3.0.0_bin_30 (1).zip'.
+[03-Dec-20 16:13:24] [Info] Daemon 'zip' started '"C:\Users\msiljuberg\.cfg\win10\autoExtractZipFiles.bat"' 6032 process with '' arguments and with '' verb. Processes to run: 0.
+[03-Dec-20 16:13:24] [Info] File or folder changed 'C:\Users\msiljuberg\Downloads\fws_4.3.0.0_bin_30 (1).zip'.
+[03-Dec-20 16:13:24] [Info] File or folder changed 'C:\Users\msiljuberg\Downloads\fws_4.3.0.0_bin_30 (1).zip'.
+[03-Dec-20 16:13:24] [Info] Process 6032 started by 'zip' daemon has exited with exit code 0.
+[03-Dec-20 16:13:24] [Info] Daemon 'zip' started '"C:\Users\msiljuberg\.cfg\win10\autoExtractZipFiles.bat"' 17904 process with '' arguments and with '' verb. Processes to run: 1.
+[03-Dec-20 16:13:25] [Info] Process 17904 started by 'zip' daemon has exited with exit code 0.
+[03-Dec-20 16:13:25] [Info] Daemon 'zip' started '"C:\Users\msiljuberg\.cfg\win10\autoExtractZipFiles.bat"' 13804 process with '' arguments and with '' verb. Processes to run: 0.
+[03-Dec-20 16:13:25] [Info] Process 13804 started by 'zip' daemon has exited with exit code 0.
+[03-Dec-20 16:14:13] [Info] File or folder renamed 'C:\Users\msiljuberg\Downloads\fws_4.3.0.0_bin_30.zip'.
+[03-Dec-20 16:14:13] [Info] Daemon 'zip' started '"C:\Users\msiljuberg\.cfg\win10\autoExtractZipFiles.bat"' 9036 process with '' arguments and with '' verb. Processes to run: 0.
+[03-Dec-20 16:14:14] [Info] Process 9036 started by 'zip' daemon has exited with exit code 0.
+[03-Dec-20 16:14:14] [Info] File or folder changed 'C:\Users\msiljuberg\Downloads\fws_4.3.0.0_bin_30.zip'.
+[03-Dec-20 16:14:14] [Info] File or folder changed 'C:\Users\msiljuberg\Downloads\fws_4.3.0.0_bin_30.zip'.
+[03-Dec-20 16:14:14] [Info] Daemon 'zip' started '"C:\Users\msiljuberg\.cfg\win10\autoExtractZipFiles.bat"' 8848 process with '' arguments and with '' verb. Processes to run: 1.
+[03-Dec-20 16:14:14] [Info] Process 8848 started by 'zip' daemon has exited with exit code 0.
+[03-Dec-20 16:14:14] [Info] Daemon 'zip' started '"C:\Users\msiljuberg\.cfg\win10\autoExtractZipFiles.bat"' 14324 process with '' arguments and with '' verb. Processes to run: 0.
+[03-Dec-20 16:14:14] [Info] Process 14324 started by 'zip' daemon has exited with exit code 0.

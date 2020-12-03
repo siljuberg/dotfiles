@@ -1,0 +1,1 @@
+7z x -y -o%USERPROFILE%\Downloads\ %USERPROFILE%\Downloads\*.zip

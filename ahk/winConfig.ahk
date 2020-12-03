@@ -13,13 +13,16 @@ Sleep 100
 SetTitleMatchMode,2
 while(true){
 WinGetActiveTitle,at
-IfWinActive,ahk_class Notepad++,Keep this file in editor?
-send,n
+; wrong IfWinActive,ahk_class Notepad++,Keep this file in editor?
+IfWinActive,Keep non existing file ahk_class #32770
+WinClose,
 WinWaitNotActive,% at
 }
 
 
 SetWorkingDir, %userprofile%\.cfg\ahk
+
+; Work related AHK scripts:
 #Include work.ahk
 
 ;***********Variables ***********
@@ -27,8 +30,11 @@ SetWorkingDir, %userprofile%\.cfg\ahk
 ;Keypirinha := "%userprofile%\Google Drive\TEK\Keypirinha\keypirinha.exe"
 ;Keypirinha := "C:\Users\" . A_username . "\Google Drive\TEK\Keypirinha\keypirinha.exe"
 ;***********GENERAL***********
+
 RAlt::AppsKey
+; Remap Shift-Capslock to represent Capslock
 +CapsLock::CapsLock
+; Remap Capslock to represent Enter
 CapsLock::Enter
 
 ;#Y::Run explorer.exe %Keypirinha%
@@ -39,21 +45,20 @@ CapsLock::Enter
 #W::Run explorer.exe "%USERPROFILE%\DOWNLOADS"
 +#W:: Sendinput, %USERPROFILE%\DOWNLOADS
 #O::Run explorer.exe "%USERPROFILE%\økonomi"
-;#Z::Run explorer.exe "%USERPROFILE%"
+#T::Run explorer.exe "%USERPROFILE%\Google Drive"\TEK
++#T::Run explorer.exe "%USERPROFILE%\Google Drive"\TEK
 
 
 #M:: Sendinput, msiljuberg@slb.com
 
 ;***********Copy highlighted text and execute in cmd ***********
-#^q::
+#^c::
 Send ^c
 Run, cmd.exe,,,myCMD
 WinWaitActive, ahk_pid %myCMD%
 Send %Clipboard%
 Send {Enter}
 return
-
-
 ;***********Copy highlighted text and execute in Windows Run ***********
 #^r::
 Send ^c
@@ -66,7 +71,7 @@ Return
 ;***********
 ;****Open, Save and Reload ahk script:***********
 #q::
-;Run "C:\Program Files (x86)\Notepad++\notepad++.exe" "%USERPROFILE%\.cfg\ahk\winConfig.ahk"
+Run "C:\Program Files\Notepad++\notepad++.exe" "%USERPROFILE%\.cfg\ahk\winConfig.ahk"
 Send,^s
 Reload
 return
