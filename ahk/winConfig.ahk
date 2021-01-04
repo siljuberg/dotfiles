@@ -3,6 +3,12 @@
 ;****** + - Shift
 ;****** ! - Alt
 ;****** # - Win
+; %USERPROFILE%\.cfg\ahk\work.ahk
+
+SetWorkingDir, %userprofile%\.cfg\ahk
+
+; Work related AHK scripts:
+#Include work.ahk
 
 ^Q:
 Sleep 100
@@ -20,10 +26,6 @@ WinWaitNotActive,% at
 }
 
 
-SetWorkingDir, %userprofile%\.cfg\ahk
-
-; Work related AHK scripts:
-#Include work.ahk
 
 ;***********Variables ***********
 ;userprofile := EnvGet("userprofile")
@@ -36,6 +38,10 @@ RAlt::AppsKey
 +CapsLock::CapsLock
 ; Remap Capslock to represent Enter
 CapsLock::Enter
+
+Launch_App2::Home	;**** Calc => Home
+F9::End				;**** F9 (and +/- is end)
+;Media_Prev::End   ;**** <<   => End
 
 ;#Y::Run explorer.exe %Keypirinha%
 
@@ -70,8 +76,13 @@ Send {Enter}
 Return
 ;***********
 ;****Open, Save and Reload ahk script:***********
-#q::
+#+q::
 Run "C:\Program Files\Notepad++\notepad++.exe" "%USERPROFILE%\.cfg\ahk\winConfig.ahk"
+Send,^s
+Reload
+return
+; Works also when in work.ahk
+#q::
 Send,^s
 Reload
 return
@@ -89,7 +100,7 @@ return
 ; The second line works for searches and the first works for URL's
 #^l::
 Send, ^c
-parameter = C:\Program Files (x86)\Google\Chrome\Application\chrome.exe https://directory.slb.com/query.cgi?query="%clipboard%"
+parameter = C:\Program Files\Google\Chrome\Application\chrome.exe https://directory.slb.com/query.cgi?query="%clipboard%"
 Run %parameter%
 return
 ;***********

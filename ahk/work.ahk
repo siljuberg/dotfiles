@@ -5,8 +5,7 @@
 ;***********
 ;***********Make Calc***********
 
-Launch_App2::Home ;**** Calc => Home
-Media_Prev::End   ;**** <<   => End
+
 
 #U::Run explorer.exe "C:\Program Files\Schlumberger\PIPESIM2019.3\Programs"
 +#U:: Sendinput, C:\Program Files\Schlumberger\PIPESIM2019.3\Programs
@@ -15,8 +14,8 @@ Media_Prev::End   ;**** <<   => End
 
 ;*********** F-Buttons ***********
 +#F1:: Sendinput, %TEMP%\PIPESIM
-#F2::Run explorer.exe "%USERPROFILE%\OneDrive - Schlumberger\Documents" ; For pictures stored with windows+shift+S
-+#F2:: Sendinput, "%USERPROFILE%\OneDrive - Schlumberger\Documents"	; For pictures stored with windows+shift+S
+#F2::Run explorer.exe "%USERPROFILE%\OneDrive - Schlumberger\Documents"
++#F2:: Sendinput, "%USERPROFILE%\OneDrive - Schlumberger\Documents"
 #F3::Run explorer.exe %USERPROFILE%\.cfg
 +#F3:: Sendinput, %USERPROFILE%\.cfg
 #F4::Run explorer.exe "%userprofile%\.cfg\shortcuts"
@@ -32,7 +31,8 @@ Media_Prev::End   ;**** <<   => End
 ;***********Open PIPESIM temp folder, sort by date modified, select latest***********
 #F1::
 Run explorer.exe "%TEMP%\PIPESIM"
-sleep, 1200
+WinWaitActive PIPESIM
+;sleep, 200
 Send {tab}
 Send {enter}
 Send {tab}
@@ -49,7 +49,7 @@ return
 +#E:: Sendinput, %USERPROFILE%
 
 
-;***********Copy Tic Number from URL, create folder in D:\OD\TIC and add to quick access ***********
+;***********Copy Tic Number from URL, create folder in C:\TIC and add to quick access ***********
 #^e::
 Send, !d
 
@@ -58,8 +58,9 @@ Send, {End}
 Send, ^+{Left}
 
 Send ^c
+ClipWait
 foldername = %clipboard%_
-newDir = D:\OD\TIC\%clipboard%_
+newDir = C:\TIC\%clipboard%_
 FileCreateDir, %newDir%
 Run explorer.exe %newDir%
 WinWaitActive %foldername%
@@ -75,13 +76,13 @@ Send, {Enter}
 Return
 ;***********
 ;***********
-;***********Copy Tic Number from URL, open D:\OD\TIC and search for highlighted text (tic number) ***********
+;***********Copy Tic Number from URL, open C:\TIC and search for highlighted text (tic number) ***********
 #^+e::
 Send, !d
 Send, {End}
 Send, ^+{Left}
 Send ^c
-Run "D:\OD\TIC"
+Run "C:\TIC"
 WinWaitActive TIC
 Sleep, 50
 Send ^f
