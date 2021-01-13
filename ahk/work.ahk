@@ -20,6 +20,8 @@
 +#F3:: Sendinput, %USERPROFILE%\.cfg
 #F4::Run explorer.exe "%userprofile%\.cfg\shortcuts"
 +#F4:: Sendinput, %userprofile%\.cfg\shortcuts
+#F5::Run explorer.exe "%LOCALAPPDATA%\Packages\Microsoft.Windows.ShellExperienceHost_cw5n1h2txyewy\TempState\ScreenClip"
++#F5:: Sendinput, %LOCALAPPDATA%\Packages\Microsoft.Windows.ShellExperienceHost_cw5n1h2txyewy\TempState\ScreenClip
 
 ;#F11:: Sendinput, 
 #F12::Run %_MSCRIPT%\clearAll.cmd
