@@ -53,14 +53,16 @@ return
 
 ;***********Copy Tic Number from URL, create folder in C:\TIC and add to quick access ***********
 #^e::
+;*****Fetch ID from browser URL:
+
 Send, !d
-
 Send, {End}
-
 Send, ^+{Left}
-
 Send ^c
 ClipWait
+
+;*****Create folder "ID_":
+
 foldername = %clipboard%_
 newDir = C:\TIC\%clipboard%_
 FileCreateDir, %newDir%
@@ -72,9 +74,11 @@ Send +{F10}
 Send {Down 2}
 Send {enter}
 Send !{Up}
+;WinWaitActive TIC
+;Sleep, 50
 Send {F2}
 Send {End}
-Send, {Enter}
+;Send, {Enter}
 Return
 ;***********
 ;***********

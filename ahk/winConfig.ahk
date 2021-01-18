@@ -25,8 +25,6 @@ WinClose,
 WinWaitNotActive,% at
 }
 
-
-
 ;***********Variables ***********
 ;userprofile := EnvGet("userprofile")
 ;Keypirinha := "%userprofile%\Google Drive\TEK\Keypirinha\keypirinha.exe"
@@ -68,6 +66,7 @@ return
 ;***********Copy highlighted text and execute in Windows Run ***********
 #^r::
 Send ^c
+ClipWait, 2
 Send ,#r
 WinWaitActive Run
 Send ^v
@@ -76,13 +75,14 @@ Send {Enter}
 Return
 ;***********
 ;****Open, Save and Reload ahk script:***********
-#+q::
-Run "C:\Program Files\Notepad++\notepad++.exe" "%USERPROFILE%\.cfg\ahk\winConfig.ahk"
+#q::
+Run, "C:\Program Files\Notepad++\notepad++.exe" "%USERPROFILE%\.cfg\ahk\winConfig.ahk",,,myCMD
+WinWaitActive, ahk_exe notepad++.exe
 Send,^s
 Reload
 return
-; Works also when in work.ahk
-#q::
+; Works also when in work.ahk:
+#+q::
 Send,^s
 Reload
 return
