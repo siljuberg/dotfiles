@@ -3,47 +3,30 @@
 ;****** + - Shift
 ;****** ! - Alt
 ;****** # - Win
-; %USERPROFILE%\.cfg\ahk\work.ahk
-
+;**********************************
+; `	Escape character (backtic upper left on keyboard below Esc character)
+;**********************************
+; Other AHK scripts:
 SetWorkingDir, %userprofile%\.cfg\ahk
+#Include work.ahk	; Work related AHK scripts:
+;#Include misc.ahk
 
-; Work related AHK scripts:
-#Include work.ahk
-
-^Q:
-Sleep 100
-;Run, C:\Users\msiljuberg\src\actnPip\actnPip\actnPip.py, "asfd"
-
-; Workaround written in AHK for windows user:
-
-SetTitleMatchMode,2
-while(true){
-WinGetActiveTitle,at
-; wrong IfWinActive,ahk_class Notepad++,Keep this file in editor?
-IfWinActive,Keep non existing file ahk_class #32770
-WinClose,
-WinWaitNotActive,% at
-}
 
 ;***********Variables ***********
 ;userprofile := EnvGet("userprofile")
 ;Keypirinha := "%userprofile%\Google Drive\TEK\Keypirinha\keypirinha.exe"
-;Keypirinha := "C:\Users\" . A_username . "\Google Drive\TEK\Keypirinha\keypirinha.exe"
 ;***********GENERAL***********
 
-RAlt::AppsKey
-; Remap Shift-Capslock to represent Capslock
-+CapsLock::CapsLock
-; Remap Capslock to represent Enter
-CapsLock::Enter
+RAlt::AppsKey			; Right alt key acts as Shift+F10
++CapsLock::CapsLock		; Remap Shift-Capslock to represent Capslock
+CapsLock::Enter			; Remap Capslock to represent Enter
 
 Launch_App2::Home	;**** Calc => Home
 F9::End				;**** F9 (and +/- is end)
-;Media_Prev::End   ;**** <<   => End
+;Media_Prev::End    ;**** <<   => End
 
-;#Y::Run explorer.exe %Keypirinha%
-
-
+#E::Run explorer.exe "D:\PA\AnacondaMigration"
++#E:: Sendinput, D:\PA\AnacondaMigration
 #F::Run explorer.exe "%USERPROFILE%\Google Drive"
 +#F:: Sendinput, %USERPROFILE%\Google Drive
 #W::Run explorer.exe "%USERPROFILE%\DOWNLOADS"
@@ -52,17 +35,24 @@ F9::End				;**** F9 (and +/- is end)
 #T::Run explorer.exe "%USERPROFILE%\Google Drive"\TEK
 +#T::Run explorer.exe "%USERPROFILE%\Google Drive"\TEK
 
-
 #M:: Sendinput, msiljuberg@slb.com
 
 ;***********Copy highlighted text and execute in cmd ***********
 #^c::
 Send ^c
+ClipWait, 2
 Run, cmd.exe,,,myCMD
 WinWaitActive, ahk_pid %myCMD%
 Send %Clipboard%
 Send {Enter}
 return
+
+;********** Copy and open marked registry path in registry editor************
+#J:: 
+Send ^c
+ClipWait, 2
+Run regjump.exe %CLIPBOARD%
+
 ;***********Copy highlighted text and execute in Windows Run ***********
 #^r::
 Send ^c
@@ -125,31 +115,3 @@ Reload
 return
 ;***********
 
-;;**** Open keypirinha ***********
-;; Currently disabled
-;
-;~LCtrl::
-;if !Triggered
-;{
-;  TimeNow := A_TickCount
-;  Triggered := 1
-;}
-;Return
-;
-;~LCtrl Up::
-;if (A_PriorKey = "LControl") and (TimeNow > 0) and (A_TickCount - TimeNow < 250) {
-;   if WinActive("ahk_class keypirinha_wndcls_run") {
-;		Send,^c
-;		;Next line is hardcoded to current keypirinha shortcut for starting and pasting text from clipboard
-;        ;Send ^!#k
-;		Run %Keypirinha% --hide
-;         }
-;   else {
-;		Send,^c
-;		;Next line is hardcoded to current keypirinha shortcut for starting and pasting text from clipboard
-;		;Send ^!#k
-;        Run %Keypirinha% --show
-;   }
-;}
-;Triggered := 0
-;Return

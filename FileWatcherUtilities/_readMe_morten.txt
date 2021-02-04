@@ -13,3 +13,7 @@ Tool is here:
 Install Service with:
 
 "%USERPROFILE%\Google Drive\TEK\Tools\FileWatcherUtilities\InstallFileWatcherWindowsService.bat"
+
+
+2. Feb 2021 Fix: 
+- FileWatcherWindowsService.exe.config had wrong paths so could not see logs or config.

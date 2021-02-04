@@ -1,0 +1,6 @@
+[02-Feb-21 10:00:40] [Info] Application started.
+[02-Feb-21 10:00:40] [Info] Daemon 'zip' is starting.
+[02-Feb-21 10:00:40] [Info] Daemon 'zip' is started.
+[02-Feb-21 10:00:48] [Info] File or folder renamed 'C:\Users\msiljuberg\Downloads\workitemhistory_20210125 (3).zip'.
+[02-Feb-21 10:00:48] [Info] Daemon 'zip' started '"C:\Users\msiljuberg\.cfg\win10\autoExtractZipFiles.bat"' 13820 process with '' arguments and with '' verb. Processes to run: 0.
+[02-Feb-21 10:00:48] [Info] Process 13820 started by 'zip' daemon has exited with exit code 0.

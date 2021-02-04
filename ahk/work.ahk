@@ -3,6 +3,7 @@
 ;****** + - Shift
 ;****** ! - Alt
 ;***********
+; `	Escape character (backtic upper left on keyboard below Esc character)
 ;***********Make Calc***********
 
 
@@ -47,48 +48,47 @@ return
 ;******* Misc. TIC related ***********
 ;*************************************
 
-#E::Run explorer.exe %USERPROFILE%
-+#E:: Sendinput, %USERPROFILE%
-
-
-;***********Copy Tic Number from URL, create folder in C:\TIC and add to quick access ***********
+;***********Copy Tic Number from URL, create folder in D:\TIC and add to quick access ***********
 #^e::
 ;*****Fetch ID from browser URL:
 
 Send, !d
 Send, {End}
 Send, ^+{Left}
+Send, ^+{Left}
 Send ^c
 ClipWait
 
-;*****Create folder "ID_":
+; Remove clutter
+StringReplace, Clipboard, Clipboard, `/general, , All
+StringReplace, Clipboard, Clipboard, contentid=, , All
+
+;*****Create folder "ID_":Q
 
 foldername = %clipboard%_
-newDir = C:\TIC\%clipboard%_
+newDir = D:\TIC\%clipboard%_
 FileCreateDir, %newDir%
 Run explorer.exe %newDir%
-WinWaitActive %foldername%
+WinWaitActive %foldername%,,2
 Send, +{Tab}
 Send +{Home}
 Send +{F10}
 Send {Down 2}
 Send {enter}
 Send !{Up}
-;WinWaitActive TIC
-;Sleep, 50
 Send {F2}
 Send {End}
 ;Send, {Enter}
 Return
 ;***********
 ;***********
-;***********Copy Tic Number from URL, open C:\TIC and search for highlighted text (tic number) ***********
+;***********Copy Tic Number from URL, open D:\TIC and search for highlighted text (tic number) ***********
 #^+e::
 Send, !d
 Send, {End}
 Send, ^+{Left}
 Send ^c
-Run "C:\TIC"
+Run "D:\TIC"
 WinWaitActive TIC
 Sleep, 50
 Send ^f

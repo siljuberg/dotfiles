@@ -22,16 +22,19 @@
         <Filter name="" />
         <Filter name="" />
         <Filter name="" />
-        <Find name="#\^r" />
-        <Find name="#\^" />
-        <Find name="#^" />
-        <Find name="#Q" />
-        <Find name="#.E" />
-        <Find name="wait" />
-        <Find name="2019.3" />
-        <Find name="2019.4" />
-        <Find name="2019.\d" />
-        <Find name="2019" />
+        <Find name="\r\n" />
+        <Find name="\d\d:\d\d\r\n" />
+        <Find name="\d\d:\d\d\r\n\n" />
+        <Find name="\d\d:\d\d\r\n\r" />
+        <Find name="\d\d:\d\d\r\n " />
+        <Find name="\d\d:\d\d\r\n\r\n" />
+        <Find name="\d\d:\d\d\r\n\r \n" />
+        <Find name="\d\d:\d\d" />
+        <Find name="#^E" />
+        <Find name="^#E" />
+        <Replace name=" " />
+        <Replace name=". " />
+        <Replace name="D:\TIC" />
         <Replace name="\r\n" />
         <Replace name="C:\TIC" />
         <Replace name="C:" />
@@ -39,26 +42,23 @@
         <Replace name='\r\n,&quot;' />
         <Replace name="\r\n,&#x00C6;" />
         <Replace name="\r\na" />
-        <Replace name="2" />
-        <Replace name="," />
-        <Replace name="&lt;/OutputPath&gt;" />
     </FindHistory>
     <History nbMaxFile="15" inSubMenu="no" customLength="-1">
-        <File filename="D:\_BK_fromGXNTTT2_30Aug2020\OD\PA\ESP_Catalog\info.txt" />
-        <File filename="C:\Users\msiljuberg\Downloads\InstallUninstall_Ver_0_4\Install_PIPESIM_2019.3.ps1" />
-        <File filename="C:\Users\msiljuberg\Downloads\InstallUninstall_Ver_0_4\InstallUninstall_Ver_0.6\Uninstall_PIPESIM.bat" />
-        <File filename="C:\Users\msiljuberg\Downloads\InstallUninstall_Ver_0.6\Install_Readme.txt" />
-        <File filename="C:\Users\msiljuberg\Downloads\InstallUninstall_Ver_0.6\Uninstall_Readme.txt" />
-        <File filename="C:\Users\msiljuberg\Google Drive\SLB\info_SLB.txt" />
-        <File filename="C:\Users\msiljuberg\Downloads\InstallUninstall_Ver_0.6\Uninstall_PIPESIM.bat" />
-        <File filename="\\no0111nas01.dir.slb.com\SPTC\PIPESIMMirror\CDDistribution\InstallUninstall\InstallUninstall_Ver_0.6\Uninstall_PIPESIM.bat" />
-        <File filename="\\no0111nas01.dir.slb.com\SPTC\PIPESIMMirror\CDDistribution\InstallUninstall\InstallUninstall_Ver_0.6\Uninstall_Readme.txt" />
-        <File filename="C:\Users\msiljuberg\AppData\Local\Temp\PIPESIM\19976\ANDR GOSP-6 &amp; UTMN-8 (scenario-4).out" />
         <File filename="C:\Users\msiljuberg\.cfg\win10\WinInit.bat" />
-        <File filename="D:\_BK_fromGXNTTT2_30Aug2020\OD\TEK\path\out.txt" />
-        <File filename="C:\TIC\7634622_\svar.txt" />
         <File filename="C:\Users\msiljuberg\.cfg\ahk\work.ahk" />
+        <File filename="C:\Users\msiljuberg\Google Drive\SLB\PSE\entirePSE.txt" />
+        <File filename="C:\Users\msiljuberg\Google Drive\SLB\PSE\div.txt" />
+        <File filename="C:\Users\msiljuberg\Google Drive\SLB\PSE\__newPSE.txt" />
+        <File filename="D:\TIC\_BI\command.txt" />
+        <File filename="D:\TIC\_BI\Excel_command.txt" />
+        <File filename="C:\Users\msiljuberg\Desktop\div\conversations\espen sykemelding 3feb.txt" />
         <File filename="C:\Users\msiljuberg\.cfg\ahk\winConfig.ahk" />
+        <File filename="C:\ProgramData\chocolatey\bin\_processed.txt" />
+        <File filename="C:\Users\msiljuberg\.cfg\Chokolatey_install.ps1" />
+        <File filename="D:\tmp\j.txt" />
+        <File filename="C:\Users\msiljuberg\Desktop\conversationHistory.txt" />
+        <File filename="C:\Users\msiljuberg\.cfg\win10\ContextMenuCleanup\disableContextMenus.bat" />
+        <File filename="C:\Users\msiljuberg\.cfg\win10\ContextMenuCleanup\Remove Print From Context Menu.reg" />
     </History>
     <ProjectPanels>
         <ProjectPanel id="0" workSpaceFile="" />
@@ -72,8 +72,8 @@
         <GUIConfig name="ScintillaViewsSplitter">vertical</GUIConfig>
         <GUIConfig name="UserDefineDlg" position="undocked">hide</GUIConfig>
         <GUIConfig name="TabSetting" replaceBySpace="no" size="4" />
-        <GUIConfig name="AppPosition" x="-2861" y="1335" width="2024" height="598" isMaximized="no" />
-        <GUIConfig name="FindWindowPosition" left="322" top="510" right="1204" bottom="957" />
+        <GUIConfig name="AppPosition" x="76" y="215" width="1590" height="804" isMaximized="no" />
+        <GUIConfig name="FindWindowPosition" left="110" top="561" right="992" bottom="925" />
         <GUIConfig name="FinderConfig" wrappedLines="no" />
         <GUIConfig name="noUpdate" intervalDays="15" nextUpdateDate="20200324">yes</GUIConfig>
         <GUIConfig name="Auto-detection">auto</GUIConfig>
@@ -110,9 +110,9 @@
         <GUIConfig name="searchEngine" searchEngineChoice="2" searchEngineCustom="" />
         <GUIConfig name="SmartHighLight" matchCase="no" wholeWordOnly="yes" useFindSettings="no" onAnotherView="no">yes</GUIConfig>
         <GUIConfig name="ScintillaPrimaryView" lineNumberMargin="show" lineNumberDynamicWidth="yes" bookMarkMargin="show" indentGuideLine="show" folderMarkStyle="box" lineWrapMethod="aligned" currentLineHilitingShow="show" scrollBeyondLastLine="no" rightClickKeepsSelection="no" disableAdvancedScrolling="no" wrapSymbolShow="hide" Wrap="yes" borderEdge="yes" isEdgeBgMode="no" edgeMultiColumnPos="" zoom="7" zoom2="4" whiteSpaceShow="hide" eolShow="hide" borderWidth="2" smoothFont="no" />
-        <GUIConfig name="DockingManager" leftWidth="200" rightWidth="200" topHeight="200" bottomHeight="433">
+        <GUIConfig name="DockingManager" leftWidth="200" rightWidth="200" topHeight="200" bottomHeight="364">
             <FloatingWindow cont="4" x="673" y="966" width="1181" height="1165" />
-            <PluginDlg pluginName="Notepad++::InternalFunction" id="0" curr="3" prev="4" isVisible="no" />
+            <PluginDlg pluginName="Notepad++::InternalFunction" id="0" curr="3" prev="4" isVisible="yes" />
             <PluginDlg pluginName="dummy" id="0" curr="3" prev="-1" isVisible="yes" />
             <PluginDlg pluginName="ComparePlugin.dll" id="11" curr="1" prev="-1" isVisible="no" />
             <ActiveTabs cont="0" activeTab="-1" />
