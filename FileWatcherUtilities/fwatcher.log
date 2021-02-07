@@ -458,3 +458,72 @@
 [04-Feb-21 12:10:33] [Info] Application started.
 [04-Feb-21 12:10:33] [Info] Daemon 'zip' is starting.
 [04-Feb-21 12:10:33] [Info] Daemon 'zip' is started.
+[04-Feb-21 13:08:48] [Info] File or folder renamed 'C:\Users\msiljuberg\Downloads\remove_cast_to_device.zip'.
+[04-Feb-21 13:08:48] [Info] Daemon 'zip' started '"C:\Users\msiljuberg\.cfg\win10\autoExtractZipFiles.bat"' 17952 process with '' arguments and with '' verb. Processes to run: 0.
+[04-Feb-21 13:08:48] [Info] File or folder changed 'C:\Users\msiljuberg\Downloads\remove_cast_to_device.zip'.
+[04-Feb-21 13:08:48] [Info] File or folder changed 'C:\Users\msiljuberg\Downloads\remove_cast_to_device.zip'.
+[04-Feb-21 13:08:48] [Info] File or folder changed 'C:\Users\msiljuberg\Downloads\remove_cast_to_device.zip'.
+[04-Feb-21 13:08:48] [Info] Process 17952 started by 'zip' daemon has exited with exit code 0.
+[04-Feb-21 13:08:48] [Info] Daemon 'zip' started '"C:\Users\msiljuberg\.cfg\win10\autoExtractZipFiles.bat"' 14380 process with '' arguments and with '' verb. Processes to run: 2.
+[04-Feb-21 13:08:49] [Info] Process 14380 started by 'zip' daemon has exited with exit code 0.
+[04-Feb-21 13:08:49] [Info] Daemon 'zip' started '"C:\Users\msiljuberg\.cfg\win10\autoExtractZipFiles.bat"' 14672 process with '' arguments and with '' verb. Processes to run: 1.
+[04-Feb-21 13:08:49] [Info] Process 14672 started by 'zip' daemon has exited with exit code 0.
+[04-Feb-21 13:08:49] [Info] Daemon 'zip' started '"C:\Users\msiljuberg\.cfg\win10\autoExtractZipFiles.bat"' 3216 process with '' arguments and with '' verb. Processes to run: 0.
+[04-Feb-21 13:08:49] [Info] Process 3216 started by 'zip' daemon has exited with exit code 0.
+[04-Feb-21 13:12:00] [Info] Daemon 'zip' is stopped.
+[04-Feb-21 13:12:00] [Info] All processes have exited.
+[04-Feb-21 13:12:00] [Info] Application stopped.
+[04-Feb-21 13:12:41] [Info] Application started.
+[04-Feb-21 13:12:41] [Info] Daemon 'zip' is starting.
+[04-Feb-21 13:12:41] [Info] Daemon 'zip' is started.
+[04-Feb-21 13:21:26] [Info] File or folder renamed 'C:\Users\msiljuberg\Downloads\remov_pin_quick_access.zip'.
+[04-Feb-21 13:21:26] [Info] Daemon 'zip' started '"C:\Users\msiljuberg\.cfg\win10\autoExtractZipFiles.bat"' 5388 process with '' arguments and with '' verb. Processes to run: 0.
+[04-Feb-21 13:21:26] [Info] File or folder changed 'C:\Users\msiljuberg\Downloads\remov_pin_quick_access.zip'.
+[04-Feb-21 13:21:26] [Info] File or folder changed 'C:\Users\msiljuberg\Downloads\remov_pin_quick_access.zip'.
+[04-Feb-21 13:21:26] [Info] File or folder changed 'C:\Users\msiljuberg\Downloads\remov_pin_quick_access.zip'.
+[04-Feb-21 13:21:26] [Info] Process 5388 started by 'zip' daemon has exited with exit code 0.
+[04-Feb-21 13:21:26] [Info] Daemon 'zip' started '"C:\Users\msiljuberg\.cfg\win10\autoExtractZipFiles.bat"' 7500 process with '' arguments and with '' verb. Processes to run: 2.
+[04-Feb-21 13:21:26] [Info] Process 7500 started by 'zip' daemon has exited with exit code 0.
+[04-Feb-21 13:21:26] [Info] Daemon 'zip' started '"C:\Users\msiljuberg\.cfg\win10\autoExtractZipFiles.bat"' 16316 process with '' arguments and with '' verb. Processes to run: 1.
+[04-Feb-21 13:21:26] [Info] Process 16316 started by 'zip' daemon has exited with exit code 0.
+[04-Feb-21 13:21:26] [Info] Daemon 'zip' started '"C:\Users\msiljuberg\.cfg\win10\autoExtractZipFiles.bat"' 11564 process with '' arguments and with '' verb. Processes to run: 0.
+[04-Feb-21 13:21:27] [Info] Process 11564 started by 'zip' daemon has exited with exit code 0.
+[04-Feb-21 15:51:43] [Info] Daemon 'zip' is stopped.
+[04-Feb-21 15:51:43] [Info] All processes have exited.
+[04-Feb-21 15:51:43] [Info] Application stopped.
+[04-Feb-21 15:52:19] [Info] Application started.
+[04-Feb-21 15:52:19] [Info] Daemon 'zip' is starting.
+[04-Feb-21 15:52:19] [Info] Daemon 'zip' is started.
+[04-Feb-21 15:55:22] [Info] Daemon 'zip' is stopped.
+[04-Feb-21 15:55:22] [Info] All processes have exited.
+[04-Feb-21 15:55:22] [Info] Application stopped.
+[04-Feb-21 15:55:57] [Info] Application started.
+[04-Feb-21 15:55:57] [Info] Daemon 'zip' is starting.
+[04-Feb-21 15:55:57] [Info] Daemon 'zip' is started.
+[05-Feb-21 08:55:28] [Info] File or folder renamed 'C:\Users\msiljuberg\Downloads\Export-9848e609-4e7e-4100-8731-f7efcc49a513.zip'.
+[05-Feb-21 08:55:28] [Info] Daemon 'zip' started '"C:\Users\msiljuberg\.cfg\win10\autoExtractZipFiles.bat"' 3080 process with '' arguments and with '' verb. Processes to run: 0.
+[05-Feb-21 08:55:28] [Info] File or folder changed 'C:\Users\msiljuberg\Downloads\Export-9848e609-4e7e-4100-8731-f7efcc49a513.zip'.
+[05-Feb-21 08:55:28] [Info] File or folder changed 'C:\Users\msiljuberg\Downloads\Export-9848e609-4e7e-4100-8731-f7efcc49a513.zip'.
+[05-Feb-21 08:55:30] [Info] Process 3080 started by 'zip' daemon has exited with exit code 0.
+[05-Feb-21 08:55:30] [Info] Daemon 'zip' started '"C:\Users\msiljuberg\.cfg\win10\autoExtractZipFiles.bat"' 1080 process with '' arguments and with '' verb. Processes to run: 1.
+[05-Feb-21 08:55:32] [Info] Process 1080 started by 'zip' daemon has exited with exit code 0.
+[05-Feb-21 08:55:32] [Info] Daemon 'zip' started '"C:\Users\msiljuberg\.cfg\win10\autoExtractZipFiles.bat"' 17972 process with '' arguments and with '' verb. Processes to run: 0.
+[05-Feb-21 08:55:34] [Info] Process 17972 started by 'zip' daemon has exited with exit code 0.
+[06-Feb-21 09:19:40] [Info] File or folder renamed 'C:\Users\msiljuberg\Downloads\Capture2Text_v4.6.2_64bit.zip'.
+[06-Feb-21 09:19:40] [Info] Daemon 'zip' started '"C:\Users\msiljuberg\.cfg\win10\autoExtractZipFiles.bat"' 16876 process with '' arguments and with '' verb. Processes to run: 0.
+[06-Feb-21 09:19:40] [Info] File or folder changed 'C:\Users\msiljuberg\Downloads\Capture2Text_v4.6.2_64bit.zip'.
+[06-Feb-21 09:19:40] [Info] File or folder changed 'C:\Users\msiljuberg\Downloads\Capture2Text_v4.6.2_64bit.zip'.
+[06-Feb-21 09:19:40] [Info] File or folder changed 'C:\Users\msiljuberg\Downloads\Capture2Text_v4.6.2_64bit.zip'.
+[06-Feb-21 09:19:41] [Info] Process 16876 started by 'zip' daemon has exited with exit code 0.
+[06-Feb-21 09:19:41] [Info] Daemon 'zip' started '"C:\Users\msiljuberg\.cfg\win10\autoExtractZipFiles.bat"' 16764 process with '' arguments and with '' verb. Processes to run: 2.
+[06-Feb-21 09:19:43] [Info] Process 16764 started by 'zip' daemon has exited with exit code 0.
+[06-Feb-21 09:19:43] [Info] Daemon 'zip' started '"C:\Users\msiljuberg\.cfg\win10\autoExtractZipFiles.bat"' 17036 process with '' arguments and with '' verb. Processes to run: 1.
+[06-Feb-21 09:19:44] [Info] Process 17036 started by 'zip' daemon has exited with exit code 0.
+[06-Feb-21 09:19:44] [Info] Daemon 'zip' started '"C:\Users\msiljuberg\.cfg\win10\autoExtractZipFiles.bat"' 4092 process with '' arguments and with '' verb. Processes to run: 0.
+[06-Feb-21 09:19:45] [Info] Process 4092 started by 'zip' daemon has exited with exit code 0.
+[06-Feb-21 09:26:08] [Info] Daemon 'zip' is stopped.
+[06-Feb-21 09:26:08] [Info] All processes have exited.
+[06-Feb-21 09:26:08] [Info] Application stopped.
+[06-Feb-21 09:26:49] [Info] Application started.
+[06-Feb-21 09:26:49] [Info] Daemon 'zip' is starting.
+[06-Feb-21 09:26:49] [Info] Daemon 'zip' is started.

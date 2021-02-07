@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="Windows-1252" ?>
 <NotepadPlus>
     <!-- The History of opened files list -->
-    <FindHistory nbMaxFindHistoryPath="10" nbMaxFindHistoryFilter="10" nbMaxFindHistoryFind="10" nbMaxFindHistoryReplace="10" matchWord="no" matchCase="no" wrap="yes" directionDown="yes" fifRecuisive="yes" fifInHiddenFolder="no" dlgAlwaysVisible="no" fifFilterFollowsDoc="no" fifFolderFollowsDoc="no" searchMode="2" transparencyMode="1" transparency="150" dotMatchesNewline="no" isSearch2ButtonsMode="no" regexBackward4PowerUser="no">
+    <FindHistory nbMaxFindHistoryPath="10" nbMaxFindHistoryFilter="10" nbMaxFindHistoryFind="10" nbMaxFindHistoryReplace="10" matchWord="no" matchCase="no" wrap="yes" directionDown="yes" fifRecuisive="yes" fifInHiddenFolder="no" dlgAlwaysVisible="no" fifFilterFollowsDoc="no" fifFolderFollowsDoc="no" searchMode="0" transparencyMode="1" transparency="150" dotMatchesNewline="no" isSearch2ButtonsMode="no" regexBackward4PowerUser="no">
         <Filter name="" />
         <Filter name="" />
         <Filter name="" />
@@ -22,43 +22,43 @@
         <Filter name="" />
         <Filter name="" />
         <Filter name="" />
+        <Find name="one" />
+        <Find name="#S" />
+        <Find name="clipw" />
+        <Find name="google" />
+        <Find name="#G" />
+        <Find name="LS" />
+        <Find name="blocke" />
+        <Find name="res" />
+        <Find name="\r\n\r\n" />
         <Find name="\r\n" />
-        <Find name="\d\d:\d\d\r\n" />
-        <Find name="\d\d:\d\d\r\n\n" />
-        <Find name="\d\d:\d\d\r\n\r" />
-        <Find name="\d\d:\d\d\r\n " />
-        <Find name="\d\d:\d\d\r\n\r\n" />
-        <Find name="\d\d:\d\d\r\n\r \n" />
-        <Find name="\d\d:\d\d" />
-        <Find name="#^E" />
-        <Find name="^#E" />
+        <Replace name="LV" />
+        <Replace name="\r\n" />
         <Replace name=" " />
         <Replace name=". " />
         <Replace name="D:\TIC" />
-        <Replace name="\r\n" />
         <Replace name="C:\TIC" />
         <Replace name="C:" />
         <Replace name="LS" />
         <Replace name='\r\n,&quot;' />
         <Replace name="\r\n,&#x00C6;" />
-        <Replace name="\r\na" />
     </FindHistory>
     <History nbMaxFile="15" inSubMenu="no" customLength="-1">
-        <File filename="C:\Users\msiljuberg\.cfg\win10\WinInit.bat" />
-        <File filename="C:\Users\msiljuberg\.cfg\ahk\work.ahk" />
-        <File filename="C:\Users\msiljuberg\Google Drive\SLB\PSE\entirePSE.txt" />
-        <File filename="C:\Users\msiljuberg\Google Drive\SLB\PSE\div.txt" />
-        <File filename="C:\Users\msiljuberg\Google Drive\SLB\PSE\__newPSE.txt" />
-        <File filename="D:\TIC\_BI\command.txt" />
-        <File filename="D:\TIC\_BI\Excel_command.txt" />
-        <File filename="C:\Users\msiljuberg\Desktop\div\conversations\espen sykemelding 3feb.txt" />
-        <File filename="C:\Users\msiljuberg\.cfg\ahk\winConfig.ahk" />
-        <File filename="C:\ProgramData\chocolatey\bin\_processed.txt" />
-        <File filename="C:\Users\msiljuberg\.cfg\Chokolatey_install.ps1" />
-        <File filename="D:\tmp\j.txt" />
-        <File filename="C:\Users\msiljuberg\Desktop\conversationHistory.txt" />
-        <File filename="C:\Users\msiljuberg\.cfg\win10\ContextMenuCleanup\disableContextMenus.bat" />
-        <File filename="C:\Users\msiljuberg\.cfg\win10\ContextMenuCleanup\Remove Print From Context Menu.reg" />
+        <File filename="C:\Users\msiljuberg\Google Drive\TEK\SettingsConfig\Windows\sendTo_backup\deprecated\extractPIPdata.bat" />
+        <File filename="C:\Users\msiljuberg\Google Drive\TEK\SettingsConfig\Windows\sendTo_backup\extractPIPdata.bat" />
+        <File filename="C:\Users\msiljuberg\Google Drive\TEK\SettingsConfig\Windows\sendTo_backup\deprecated\extractPIPdata_all.bat" />
+        <File filename="C:\Users\msiljuberg\Google Drive\TEK\SettingsConfig\Windows\sendTo_backup\_extractPIPdata_all.bat" />
+        <File filename="C:\Users\msiljuberg\Google Drive\TEK\SettingsConfig\Windows\sendTo_backup\extractPIPdata_version.bat" />
+        <File filename="C:\Users\msiljuberg\Google Drive\TEK\SettingsConfig\Windows\sendTo_backup\deprecated\extractPIPdata_version.bat" />
+        <File filename="C:\Users\msiljuberg\Google Drive\TEK\SLB\winHacks\restart.bat" />
+        <File filename="C:\Users\msiljuberg\Google Drive\TEK\SLB\winHacks\stop_SHT.bat" />
+        <File filename="C:\Users\msiljuberg\Google Drive\TEK\SLB\div\jupyterlab.bat" />
+        <File filename="C:\Users\msiljuberg\Google Drive\TEK\SLB\winHacks\fullStart.bat" />
+        <File filename="C:\Users\msiljuberg\Google Drive\TEK\SLB\winHacks\start_SHT.bat" />
+        <File filename="C:\Users\msiljuberg\Google Drive\TEK\SLB\div\pingr.bat" />
+        <File filename="C:\Users\msiljuberg\Google Drive\TEK\SLB\winHacks\greenifySHT.bat" />
+        <File filename="C:\Users\msiljuberg\Google Drive\TEK\SettingsConfig\greenifySHT.bat" />
+        <File filename="C:\Users\msiljuberg\Desktop\asdf.bat" />
     </History>
     <ProjectPanels>
         <ProjectPanel id="0" workSpaceFile="" />
@@ -72,8 +72,8 @@
         <GUIConfig name="ScintillaViewsSplitter">vertical</GUIConfig>
         <GUIConfig name="UserDefineDlg" position="undocked">hide</GUIConfig>
         <GUIConfig name="TabSetting" replaceBySpace="no" size="4" />
-        <GUIConfig name="AppPosition" x="76" y="215" width="1590" height="804" isMaximized="no" />
-        <GUIConfig name="FindWindowPosition" left="110" top="561" right="992" bottom="925" />
+        <GUIConfig name="AppPosition" x="-3954" y="342" width="2160" height="1115" isMaximized="no" />
+        <GUIConfig name="FindWindowPosition" left="110" top="561" right="992" bottom="1008" />
         <GUIConfig name="FinderConfig" wrappedLines="no" />
         <GUIConfig name="noUpdate" intervalDays="15" nextUpdateDate="20200324">yes</GUIConfig>
         <GUIConfig name="Auto-detection">auto</GUIConfig>

@@ -6,6 +6,7 @@
 ;**********************************
 ; `	Escape character (backtic upper left on keyboard below Esc character)
 ;**********************************
+; %userprofile%\.cfg\ahk\work.ahk
 ; Other AHK scripts:
 SetWorkingDir, %userprofile%\.cfg\ahk
 #Include work.ahk	; Work related AHK scripts:
@@ -25,6 +26,7 @@ Launch_App2::Home	;**** Calc => Home
 F9::End				;**** F9 (and +/- is end)
 ;Media_Prev::End    ;**** <<   => End
 
+#s::Run explorer.exe "%USERPROFILE%\Google Drive\rabota"
 #E::Run explorer.exe "D:\PA\AnacondaMigration"
 +#E:: Sendinput, D:\PA\AnacondaMigration
 #F::Run explorer.exe "%USERPROFILE%\Google Drive"
@@ -81,6 +83,7 @@ return
 ; The second line works for searches and the first works for URL's
 #^g::
 Send, ^c
+ClipWait, 2
 ;parameter = C:\Program Files\Google\Chrome\Application\chrome.exe "%clipboard%"
 parameter = C:\Program Files\Google\Chrome\Application\chrome.exe https://www.google.com/search?q="%clipboard%"
 Run %parameter%
