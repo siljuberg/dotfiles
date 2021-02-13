@@ -13,6 +13,11 @@ SetWorkingDir, %userprofile%\.cfg\ahk
 ;#Include misc.ahk
 
 
+; Abort any script:
+^Escape::
+ExitApp
+Return
+
 ;***********Variables ***********
 ;userprofile := EnvGet("userprofile")
 ;Keypirinha := "%userprofile%\Google Drive\TEK\Keypirinha\keypirinha.exe"

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="Windows-1252" ?>
 <NotepadPlus>
     <!-- The History of opened files list -->
-    <FindHistory nbMaxFindHistoryPath="10" nbMaxFindHistoryFilter="10" nbMaxFindHistoryFind="10" nbMaxFindHistoryReplace="10" matchWord="no" matchCase="no" wrap="yes" directionDown="yes" fifRecuisive="yes" fifInHiddenFolder="no" dlgAlwaysVisible="no" fifFilterFollowsDoc="no" fifFolderFollowsDoc="no" searchMode="0" transparencyMode="1" transparency="150" dotMatchesNewline="no" isSearch2ButtonsMode="no" regexBackward4PowerUser="no">
+    <FindHistory nbMaxFindHistoryPath="10" nbMaxFindHistoryFilter="10" nbMaxFindHistoryFind="10" nbMaxFindHistoryReplace="10" matchWord="no" matchCase="no" wrap="yes" directionDown="yes" fifRecuisive="yes" fifInHiddenFolder="no" dlgAlwaysVisible="no" fifFilterFollowsDoc="no" fifFolderFollowsDoc="no" searchMode="1" transparencyMode="1" transparency="150" dotMatchesNewline="no" isSearch2ButtonsMode="no" regexBackward4PowerUser="no">
         <Filter name="" />
         <Filter name="" />
         <Filter name="" />
@@ -22,18 +22,18 @@
         <Filter name="" />
         <Filter name="" />
         <Filter name="" />
+        <Find name="#J" />
+        <Find name="$" />
+        <Find name="usersupp" />
+        <Find name="PIPESIM" />
+        <Find name="mrp" />
+        <Find name="%2C" />
+        <Find name="%" />
+        <Find name="2C1096848" />
+        <Find name="95" />
         <Find name="one" />
-        <Find name="#S" />
-        <Find name="clipw" />
-        <Find name="google" />
-        <Find name="#G" />
-        <Find name="LS" />
-        <Find name="blocke" />
-        <Find name="res" />
-        <Find name="\r\n\r\n" />
-        <Find name="\r\n" />
-        <Replace name="LV" />
         <Replace name="\r\n" />
+        <Replace name="LV" />
         <Replace name=" " />
         <Replace name=". " />
         <Replace name="D:\TIC" />
@@ -44,21 +44,21 @@
         <Replace name="\r\n,&#x00C6;" />
     </FindHistory>
     <History nbMaxFile="15" inSubMenu="no" customLength="-1">
-        <File filename="C:\Users\msiljuberg\Google Drive\TEK\SettingsConfig\Windows\sendTo_backup\deprecated\extractPIPdata.bat" />
-        <File filename="C:\Users\msiljuberg\Google Drive\TEK\SettingsConfig\Windows\sendTo_backup\extractPIPdata.bat" />
-        <File filename="C:\Users\msiljuberg\Google Drive\TEK\SettingsConfig\Windows\sendTo_backup\deprecated\extractPIPdata_all.bat" />
-        <File filename="C:\Users\msiljuberg\Google Drive\TEK\SettingsConfig\Windows\sendTo_backup\_extractPIPdata_all.bat" />
-        <File filename="C:\Users\msiljuberg\Google Drive\TEK\SettingsConfig\Windows\sendTo_backup\extractPIPdata_version.bat" />
-        <File filename="C:\Users\msiljuberg\Google Drive\TEK\SettingsConfig\Windows\sendTo_backup\deprecated\extractPIPdata_version.bat" />
-        <File filename="C:\Users\msiljuberg\Google Drive\TEK\SLB\winHacks\restart.bat" />
-        <File filename="C:\Users\msiljuberg\Google Drive\TEK\SLB\winHacks\stop_SHT.bat" />
-        <File filename="C:\Users\msiljuberg\Google Drive\TEK\SLB\div\jupyterlab.bat" />
-        <File filename="C:\Users\msiljuberg\Google Drive\TEK\SLB\winHacks\fullStart.bat" />
-        <File filename="C:\Users\msiljuberg\Google Drive\TEK\SLB\winHacks\start_SHT.bat" />
-        <File filename="C:\Users\msiljuberg\Google Drive\TEK\SLB\div\pingr.bat" />
-        <File filename="C:\Users\msiljuberg\Google Drive\TEK\SLB\winHacks\greenifySHT.bat" />
-        <File filename="C:\Users\msiljuberg\Google Drive\TEK\SettingsConfig\greenifySHT.bat" />
-        <File filename="C:\Users\msiljuberg\Desktop\asdf.bat" />
+        <File filename="C:\Users\msiljuberg\.config\configstore\update-notifier-npm.json" />
+        <File filename="D:\TIC\605873_openingError\svar.txt" />
+        <File filename="C:\Lic\Lic\Combined_Licenses_2020.12.11.10.47.31.lic" />
+        <File filename="C:\Users\msiljuberg\Google Drive\SLB\CCC_legacyTickets\_overview\tickets.txt" />
+        <File filename="C:\Users\msiljuberg\Google Drive\SLB\_defaultReply.txt" />
+        <File filename="D:\TIC\7648362_Svetlana_Salinity\svar.txt" />
+        <File filename="C:\Users\msiljuberg\AppData\Local\Temp\PIPESIM\26432\Test model MF.out" />
+        <File filename="C:\P\POET\manta_tests\core\data\metadata_b785.json" />
+        <File filename="C:\Users\msiljuberg\Google Drive\Rabota\CV_uttak.txt" />
+        <File filename="C:\Users\msiljuberg\Google Drive\Rabota\internal--external notes.txt" />
+        <File filename="C:\Users\msiljuberg\Google Drive\TEK\Fiddler\pageSize\1_Response.txt" />
+        <File filename="C:\Users\msiljuberg\.cfg\ahk\winConfig.ahk" />
+        <File filename="C:\Users\msiljuberg\Downloads\SPT Group\Licenses\license.lic" />
+        <File filename="C:\Lic\Lic\license.lic" />
+        <File filename="C:\Lic\dbg.log" />
     </History>
     <ProjectPanels>
         <ProjectPanel id="0" workSpaceFile="" />
@@ -72,8 +72,8 @@
         <GUIConfig name="ScintillaViewsSplitter">vertical</GUIConfig>
         <GUIConfig name="UserDefineDlg" position="undocked">hide</GUIConfig>
         <GUIConfig name="TabSetting" replaceBySpace="no" size="4" />
-        <GUIConfig name="AppPosition" x="-3954" y="342" width="2160" height="1115" isMaximized="no" />
-        <GUIConfig name="FindWindowPosition" left="110" top="561" right="992" bottom="1008" />
+        <GUIConfig name="AppPosition" x="463" y="591" width="1291" height="433" isMaximized="yes" />
+        <GUIConfig name="FindWindowPosition" left="110" top="561" right="992" bottom="925" />
         <GUIConfig name="FinderConfig" wrappedLines="no" />
         <GUIConfig name="noUpdate" intervalDays="15" nextUpdateDate="20200324">yes</GUIConfig>
         <GUIConfig name="Auto-detection">auto</GUIConfig>

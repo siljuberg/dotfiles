@@ -527,3 +527,84 @@
 [06-Feb-21 09:26:49] [Info] Application started.
 [06-Feb-21 09:26:49] [Info] Daemon 'zip' is starting.
 [06-Feb-21 09:26:49] [Info] Daemon 'zip' is started.
+[08-Feb-21 08:19:54] [Info] Daemon 'zip' is stopped.
+[08-Feb-21 08:19:54] [Info] All processes have exited.
+[08-Feb-21 08:19:54] [Info] Application stopped.
+[08-Feb-21 08:20:40] [Info] Application started.
+[08-Feb-21 08:20:40] [Info] Daemon 'zip' is starting.
+[08-Feb-21 08:20:41] [Info] Daemon 'zip' is started.
+[08-Feb-21 12:51:51] [Info] Daemon 'zip' is stopped.
+[08-Feb-21 12:51:51] [Info] All processes have exited.
+[08-Feb-21 12:51:51] [Info] Application stopped.
+[08-Feb-21 12:52:37] [Info] Application started.
+[08-Feb-21 12:52:37] [Info] Daemon 'zip' is starting.
+[08-Feb-21 12:52:37] [Info] Daemon 'zip' is started.
+[08-Feb-21 13:00:43] [Info] Daemon 'zip' is stopped.
+[08-Feb-21 13:00:43] [Info] All processes have exited.
+[08-Feb-21 13:00:43] [Info] Application stopped.
+[08-Feb-21 13:01:27] [Info] Application started.
+[08-Feb-21 13:01:27] [Info] Daemon 'zip' is starting.
+[08-Feb-21 13:01:27] [Info] Daemon 'zip' is started.
+[08-Feb-21 13:05:56] [Info] Daemon 'zip' is stopped.
+[08-Feb-21 13:05:56] [Info] All processes have exited.
+[08-Feb-21 13:05:56] [Info] Application stopped.
+[08-Feb-21 13:06:38] [Info] Application started.
+[08-Feb-21 13:06:38] [Info] Daemon 'zip' is starting.
+[08-Feb-21 13:06:38] [Info] Daemon 'zip' is started.
+[08-Feb-21 13:24:14] [Info] Daemon 'zip' is stopped.
+[08-Feb-21 13:24:14] [Info] All processes have exited.
+[08-Feb-21 13:24:14] [Info] Application stopped.
+[08-Feb-21 13:25:01] [Info] Application started.
+[08-Feb-21 13:25:01] [Info] Daemon 'zip' is starting.
+[08-Feb-21 13:25:01] [Info] Daemon 'zip' is started.
+[08-Feb-21 13:32:37] [Info] Daemon 'zip' is stopped.
+[08-Feb-21 13:32:37] [Info] All processes have exited.
+[08-Feb-21 13:32:37] [Info] Application stopped.
+[08-Feb-21 13:33:21] [Info] Application started.
+[08-Feb-21 13:33:21] [Info] Daemon 'zip' is starting.
+[08-Feb-21 13:33:21] [Info] Daemon 'zip' is started.
+[08-Feb-21 13:46:28] [Info] Daemon 'zip' is stopped.
+[08-Feb-21 13:46:28] [Info] All processes have exited.
+[08-Feb-21 13:46:28] [Info] Application stopped.
+[08-Feb-21 13:47:16] [Info] Application started.
+[08-Feb-21 13:47:16] [Info] Daemon 'zip' is starting.
+[08-Feb-21 13:47:16] [Info] Daemon 'zip' is started.
+[08-Feb-21 13:51:10] [Info] Daemon 'zip' is stopped.
+[08-Feb-21 13:51:10] [Info] All processes have exited.
+[08-Feb-21 13:51:10] [Info] Application stopped.
+[08-Feb-21 13:51:55] [Info] Application started.
+[08-Feb-21 13:51:55] [Info] Daemon 'zip' is starting.
+[08-Feb-21 13:51:55] [Info] Daemon 'zip' is started.
+[08-Feb-21 20:58:02] [Info] Daemon 'zip' is stopped.
+[08-Feb-21 20:58:02] [Info] All processes have exited.
+[08-Feb-21 20:58:02] [Info] Application stopped.
+[08-Feb-21 20:58:45] [Info] Application started.
+[08-Feb-21 20:58:45] [Info] Daemon 'zip' is starting.
+[08-Feb-21 20:58:45] [Info] Daemon 'zip' is started.
+[11-Feb-21 09:50:57] [Info] File or folder renamed 'C:\Users\msiljuberg\Downloads\OLGA_2019.1.2_setup.zip'.
+[11-Feb-21 09:50:57] [Info] Daemon 'zip' started '"C:\Users\msiljuberg\.cfg\win10\autoExtractZipFiles.bat"' 2164 process with '' arguments and with '' verb. Processes to run: 0.
+[11-Feb-21 09:51:00] [Info] Process 2164 started by 'zip' daemon has exited with exit code 0.
+[12-Feb-21 08:54:14] [Info] Daemon 'zip' is stopped.
+[12-Feb-21 08:54:14] [Info] All processes have exited.
+[12-Feb-21 08:54:14] [Info] Application stopped.
+[12-Feb-21 08:55:05] [Info] Application started.
+[12-Feb-21 08:55:05] [Info] Daemon 'zip' is starting.
+[12-Feb-21 08:55:05] [Info] Daemon 'zip' is started.
+[12-Feb-21 17:20:28] [Info] File or folder renamed 'C:\Users\msiljuberg\Downloads\SPT Group.zip'.
+[12-Feb-21 17:20:28] [Info] Daemon 'zip' started '"C:\Users\msiljuberg\.cfg\win10\autoExtractZipFiles.bat"' 4268 process with '' arguments and with '' verb. Processes to run: 0.
+[12-Feb-21 17:20:28] [Info] File or folder changed 'C:\Users\msiljuberg\Downloads\SPT Group.zip'.
+[12-Feb-21 17:20:28] [Info] File or folder changed 'C:\Users\msiljuberg\Downloads\SPT Group.zip'.
+[12-Feb-21 17:20:28] [Info] File or folder changed 'C:\Users\msiljuberg\Downloads\SPT Group.zip'.
+[12-Feb-21 17:20:29] [Info] Process 4268 started by 'zip' daemon has exited with exit code 0.
+[12-Feb-21 17:20:29] [Info] Daemon 'zip' started '"C:\Users\msiljuberg\.cfg\win10\autoExtractZipFiles.bat"' 15464 process with '' arguments and with '' verb. Processes to run: 2.
+[12-Feb-21 17:20:29] [Info] Process 15464 started by 'zip' daemon has exited with exit code 0.
+[12-Feb-21 17:20:29] [Info] Daemon 'zip' started '"C:\Users\msiljuberg\.cfg\win10\autoExtractZipFiles.bat"' 22288 process with '' arguments and with '' verb. Processes to run: 1.
+[12-Feb-21 17:20:29] [Info] Process 22288 started by 'zip' daemon has exited with exit code 0.
+[12-Feb-21 17:20:29] [Info] Daemon 'zip' started '"C:\Users\msiljuberg\.cfg\win10\autoExtractZipFiles.bat"' 10008 process with '' arguments and with '' verb. Processes to run: 0.
+[12-Feb-21 17:20:29] [Info] Process 10008 started by 'zip' daemon has exited with exit code 0.
+[13-Feb-21 11:22:29] [Info] Daemon 'zip' is stopped.
+[13-Feb-21 11:22:29] [Info] All processes have exited.
+[13-Feb-21 11:22:29] [Info] Application stopped.
+[13-Feb-21 11:23:08] [Info] Application started.
+[13-Feb-21 11:23:08] [Info] Daemon 'zip' is starting.
+[13-Feb-21 11:23:08] [Info] Daemon 'zip' is started.
