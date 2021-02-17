@@ -9,8 +9,9 @@
 ; %userprofile%\.cfg\ahk\work.ahk
 ; Other AHK scripts:
 SetWorkingDir, %userprofile%\.cfg\ahk
-#Include work.ahk	; Work related AHK scripts:
+#Include work.ahk	; Work related AHK scripts
 ;#Include misc.ahk
+#Include FeelingLucky.ahk
 
 
 ; Abort any script:
@@ -23,7 +24,7 @@ Return
 ;Keypirinha := "%userprofile%\Google Drive\TEK\Keypirinha\keypirinha.exe"
 ;***********GENERAL***********
 
-RAlt::AppsKey			; Right alt key acts as Shift+F10
+;RAlt::AppsKey			; Right alt key acts as Shift+F10
 +CapsLock::CapsLock		; Remap Shift-Capslock to represent Capslock
 CapsLock::Enter			; Remap Capslock to represent Enter
 

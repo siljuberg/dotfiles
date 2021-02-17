@@ -22,16 +22,17 @@
         <Filter name="" />
         <Filter name="" />
         <Filter name="" />
+        <Filter name="" />
+        <Find name="A_Space" />
+        <Find name="#Q" />
+        <Find name="alt" />
+        <Find name="multiflash" />
+        <Find name="kbc" />
         <Find name="#J" />
         <Find name="$" />
         <Find name="usersupp" />
         <Find name="PIPESIM" />
         <Find name="mrp" />
-        <Find name="%2C" />
-        <Find name="%" />
-        <Find name="2C1096848" />
-        <Find name="95" />
-        <Find name="one" />
         <Replace name="\r\n" />
         <Replace name="LV" />
         <Replace name=" " />
@@ -44,21 +45,21 @@
         <Replace name="\r\n,&#x00C6;" />
     </FindHistory>
     <History nbMaxFile="15" inSubMenu="no" customLength="-1">
-        <File filename="C:\Users\msiljuberg\.config\configstore\update-notifier-npm.json" />
-        <File filename="D:\TIC\605873_openingError\svar.txt" />
-        <File filename="C:\Lic\Lic\Combined_Licenses_2020.12.11.10.47.31.lic" />
-        <File filename="C:\Users\msiljuberg\Google Drive\SLB\CCC_legacyTickets\_overview\tickets.txt" />
-        <File filename="C:\Users\msiljuberg\Google Drive\SLB\_defaultReply.txt" />
-        <File filename="D:\TIC\7648362_Svetlana_Salinity\svar.txt" />
-        <File filename="C:\Users\msiljuberg\AppData\Local\Temp\PIPESIM\26432\Test model MF.out" />
-        <File filename="C:\P\POET\manta_tests\core\data\metadata_b785.json" />
-        <File filename="C:\Users\msiljuberg\Google Drive\Rabota\CV_uttak.txt" />
-        <File filename="C:\Users\msiljuberg\Google Drive\Rabota\internal--external notes.txt" />
-        <File filename="C:\Users\msiljuberg\Google Drive\TEK\Fiddler\pageSize\1_Response.txt" />
-        <File filename="C:\Users\msiljuberg\.cfg\ahk\winConfig.ahk" />
-        <File filename="C:\Users\msiljuberg\Downloads\SPT Group\Licenses\license.lic" />
-        <File filename="C:\Lic\Lic\license.lic" />
         <File filename="C:\Lic\dbg.log" />
+        <File filename="C:\Users\msiljuberg\Google Drive\div\bursdagsBilder\aleks\Aleks.txt" />
+        <File filename="C:\Users\msiljuberg\Google Drive\div\kort.txt" />
+        <File filename="C:\Users\msiljuberg\Google Drive\div\k.txt" />
+        <File filename="C:\Lic\Lic\Combined_Licenses_2020.12.11.10.47.31.lic" />
+        <File filename="D:\TIC\7648362_Svetlana_Salinity\svar2.txt" />
+        <File filename="C:\Users\msiljuberg\Google Drive\SLB\info_SLB.txt" />
+        <File filename="C:\Users\msiljuberg\AppData\Local\Packages\Microsoft.Windows.ShellExperienceHost_cw5n1h2txyewy\TempState\ScreenClip\{CF5B8567-8867-4752-81F4-521C1A805FD4}.png" />
+        <File filename="C:\Users\msiljuberg\Google Drive\SLB\_defaultReply.txt" />
+        <File filename="C:\Users\msiljuberg\.cfg\vsCode\pst2020.bat" />
+        <File filename="C:\Users\msiljuberg\.cfg\win10\ContextMenuCleanup\disableContextMenus.bat" />
+        <File filename="C:\Users\msiljuberg\.cfg\ahk\misc.ahk" />
+        <File filename="C:\Users\msiljuberg\Desktop\conversationHistory.txt" />
+        <File filename="C:\Users\msiljuberg\.cfg\ahk\FeelingLucky.ahk" />
+        <File filename="C:\Users\msiljuberg\.cfg\ahk\winConfig.ahk" />
     </History>
     <ProjectPanels>
         <ProjectPanel id="0" workSpaceFile="" />
@@ -72,8 +73,8 @@
         <GUIConfig name="ScintillaViewsSplitter">vertical</GUIConfig>
         <GUIConfig name="UserDefineDlg" position="undocked">hide</GUIConfig>
         <GUIConfig name="TabSetting" replaceBySpace="no" size="4" />
-        <GUIConfig name="AppPosition" x="463" y="591" width="1291" height="433" isMaximized="yes" />
-        <GUIConfig name="FindWindowPosition" left="110" top="561" right="992" bottom="925" />
+        <GUIConfig name="AppPosition" x="4509" y="1101" width="1209" height="1027" isMaximized="yes" />
+        <GUIConfig name="FindWindowPosition" left="1019" top="115" right="1901" bottom="479" />
         <GUIConfig name="FinderConfig" wrappedLines="no" />
         <GUIConfig name="noUpdate" intervalDays="15" nextUpdateDate="20200324">yes</GUIConfig>
         <GUIConfig name="Auto-detection">auto</GUIConfig>
@@ -110,7 +111,7 @@
         <GUIConfig name="searchEngine" searchEngineChoice="2" searchEngineCustom="" />
         <GUIConfig name="SmartHighLight" matchCase="no" wholeWordOnly="yes" useFindSettings="no" onAnotherView="no">yes</GUIConfig>
         <GUIConfig name="ScintillaPrimaryView" lineNumberMargin="show" lineNumberDynamicWidth="yes" bookMarkMargin="show" indentGuideLine="show" folderMarkStyle="box" lineWrapMethod="aligned" currentLineHilitingShow="show" scrollBeyondLastLine="no" rightClickKeepsSelection="no" disableAdvancedScrolling="no" wrapSymbolShow="hide" Wrap="yes" borderEdge="yes" isEdgeBgMode="no" edgeMultiColumnPos="" zoom="7" zoom2="4" whiteSpaceShow="hide" eolShow="hide" borderWidth="2" smoothFont="no" />
-        <GUIConfig name="DockingManager" leftWidth="200" rightWidth="200" topHeight="200" bottomHeight="364">
+        <GUIConfig name="DockingManager" leftWidth="200" rightWidth="200" topHeight="200" bottomHeight="232">
             <FloatingWindow cont="4" x="673" y="966" width="1181" height="1165" />
             <PluginDlg pluginName="Notepad++::InternalFunction" id="0" curr="3" prev="4" isVisible="yes" />
             <PluginDlg pluginName="dummy" id="0" curr="3" prev="-1" isVisible="yes" />
@@ -118,7 +119,8 @@
             <ActiveTabs cont="0" activeTab="-1" />
             <ActiveTabs cont="1" activeTab="-1" />
             <ActiveTabs cont="2" activeTab="-1" />
-            <ActiveTabs cont="3" activeTab="-1" />
+            <ActiveTabs cont="3" activeTab="0" />
+            <ActiveTabs cont="4" activeTab="-1" />
         </GUIConfig>
     </GUIConfigs>
 </NotepadPlus>
