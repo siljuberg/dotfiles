@@ -8,14 +8,26 @@ If (Search <> "")
 		Process, Close, regedit.exe
 		RegWrite, REG_SZ, HKEY_CURRENT_USER, Software\Microsoft\Windows\CurrentVersion\Applets\Regedit, Lastkey, %Search% ; This key determines where regedit.exe opens
 		Run regedit.exe, , Max
-	} Else If RegExMatch(Search, "^\d+\.\d+\.\d+\.\d+$") ; If it's an IP address, look it up
+	}
+	Else If RegExMatch(Search, "^\d+\.\d+\.\d+\.\d+$") ; If it's an IP address, look it up
 		Run %DefaultBrowser% http://whatismyipaddress.com/ip/%Search%
-	Else If (InStr(Search, ":\") = 2) or (InStr(Search, "\\") = 1) ; If it appears to be a filepath, run it
+	Else If (InStr(Search, ":\") = 2) or (InStr(Search, "\\") = 1) or (InStr(Search, "%") = 1) { ; If it appears to be a filepath, run it
+		Transform, Search, Deref, %Search%
 		Run %Search%
+		}		
+	Else If (RegExMatch(Search, "\d\d\d\d\d")) { ; If it appears to be a filepath, run it
+		If (Search>5000000)
+			Run % DefaultBrowser A_Space "https://intouchsupport.com/index.cfm?event=ITE.edit&contentid="Search
+		Else If (Search>5000)
+			Run % DefaultBrowser A_Space "https://dev.azure.com/slb-swt/Flow_Assurance/_workitems/edit/"Search	
+			;Run % DefaultBrowser A_Space "https://www.customercarecenter.slb.com/saw/Request/"Search
+		}		
 	Else If (InStr(Search, "http") = 1) or RegExMatch(Search, "^[\w-]+\.[\w-]+(\.[\w-]+){0,3}(/.*)?$") ; If it appears to be a URL then run it with the default browser (sometimes I change mine)
 		Run % DefaultBrowser A_Space Search
 	Else
 		Run % DefaultBrowser A_Space "http://www.google.com/search?q=" EncodeURL(Search) "&btnI=1" ; Otherwise conduct an I'm Feeling Lucky search of the term on wikipedia
+Else
+	Run % DefaultBrowser A_Space "https://intouchsupport.com/index.cfm?event=ite.workspace"
 Return
 
 ;=============================================[Std.ahk]=============================================

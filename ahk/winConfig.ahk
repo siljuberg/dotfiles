@@ -13,7 +13,6 @@ SetWorkingDir, %userprofile%\.cfg\ahk
 ;#Include misc.ahk
 #Include FeelingLucky.ahk
 
-
 ; Abort any script:
 ^Escape::
 ExitApp
@@ -73,14 +72,14 @@ Send {Enter}
 Return
 ;***********
 ;****Open, Save and Reload ahk script:***********
-#q::
+#+q::
 Run, "C:\Program Files\Notepad++\notepad++.exe" "%USERPROFILE%\.cfg\ahk\winConfig.ahk",,,myCMD
 WinWaitActive, ahk_exe notepad++.exe
 Send,^s
 Reload
 return
 ; Works also when in work.ahk:
-#+q::
+#q::
 Send,^s
 Reload
 return
