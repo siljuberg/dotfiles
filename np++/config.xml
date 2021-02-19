@@ -22,16 +22,16 @@
         <Filter name="" />
         <Filter name="" />
         <Filter name="" />
-        <Find name="A_Space" />
+        <Find name="send" />
+        <Find name="#R" />
         <Find name="#Q" />
+        <Find name="A_Space" />
         <Find name="alt" />
         <Find name="multiflash" />
         <Find name="kbc" />
         <Find name="#J" />
         <Find name="$" />
         <Find name="usersupp" />
-        <Find name="PIPESIM" />
-        <Find name="mrp" />
         <Replace name="\r\n" />
         <Replace name="LV" />
         <Replace name=" " />
@@ -44,21 +44,21 @@
         <Replace name="\r\n,&#x00C6;" />
     </FindHistory>
     <History nbMaxFile="15" inSubMenu="no" customLength="-1">
-        <File filename="C:\Users\msiljuberg\Google Drive\div\k.txt" />
-        <File filename="C:\Lic\Lic\Combined_Licenses_2020.12.11.10.47.31.lic" />
-        <File filename="D:\TIC\7648362_Svetlana_Salinity\svar2.txt" />
         <File filename="C:\Users\msiljuberg\AppData\Local\Packages\Microsoft.Windows.ShellExperienceHost_cw5n1h2txyewy\TempState\ScreenClip\{CF5B8567-8867-4752-81F4-521C1A805FD4}.png" />
         <File filename="C:\Users\msiljuberg\.cfg\vsCode\pst2020.bat" />
         <File filename="C:\Users\msiljuberg\.cfg\win10\ContextMenuCleanup\disableContextMenus.bat" />
         <File filename="C:\Users\msiljuberg\.cfg\ahk\misc.ahk" />
-        <File filename="C:\Users\msiljuberg\.cfg\ahk\FeelingLucky.ahk" />
-        <File filename="C:\Users\msiljuberg\.cfg\ahk\winConfig.ahk" />
         <File filename="C:\Users\msiljuberg\Desktop\conversationHistory.txt" />
-        <File filename="C:\Users\msiljuberg\Google Drive\SLB\info_SLB.txt" />
         <File filename="C:\Users\msiljuberg\AppData\Local\Temp\PIPESIM\8156\Src - P_T profile.out" />
         <File filename="C:\Users\msiljuberg\.cfg\winMerge\lineFilters.reg" />
         <File filename="D:\TIC\7650979_SvetlanaChoke\svar.txt" />
         <File filename="C:\Users\msiljuberg\Google Drive\SLB\_defaultReply.txt" />
+        <File filename="C:\Users\msiljuberg\Google Drive\SLB\info_SLB.txt" />
+        <File filename="C:\Users\msiljuberg\Downloads\Pronosticos29012021_7652517_03.xml" />
+        <File filename="C:\Users\msiljuberg\Downloads\canopy-configuration_7644643_01.log" />
+        <File filename="C:\Users\msiljuberg\canopy-installation.log" />
+        <File filename="C:\Users\msiljuberg\.cfg\ahk\winConfig.ahk" />
+        <File filename="C:\Users\msiljuberg\.cfg\ahk\FeelingLucky.ahk" />
     </History>
     <ProjectPanels>
         <ProjectPanel id="0" workSpaceFile="" />
@@ -72,8 +72,8 @@
         <GUIConfig name="ScintillaViewsSplitter">vertical</GUIConfig>
         <GUIConfig name="UserDefineDlg" position="undocked">hide</GUIConfig>
         <GUIConfig name="TabSetting" replaceBySpace="no" size="4" />
-        <GUIConfig name="AppPosition" x="-4610" y="669" width="1977" height="1049" isMaximized="no" />
-        <GUIConfig name="FindWindowPosition" left="1019" top="115" right="1901" bottom="479" />
+        <GUIConfig name="AppPosition" x="-3327" y="120" width="2041" height="1717" isMaximized="no" />
+        <GUIConfig name="FindWindowPosition" left="1019" top="115" right="1901" bottom="562" />
         <GUIConfig name="FinderConfig" wrappedLines="no" />
         <GUIConfig name="noUpdate" intervalDays="15" nextUpdateDate="20200324">yes</GUIConfig>
         <GUIConfig name="Auto-detection">auto</GUIConfig>

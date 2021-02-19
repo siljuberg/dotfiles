@@ -75,6 +75,8 @@ Return
 #+q::
 Run, "C:\Program Files\Notepad++\notepad++.exe" "%USERPROFILE%\.cfg\ahk\winConfig.ahk",,,myCMD
 WinWaitActive, ahk_exe notepad++.exe
+Run, "C:\Program Files\Notepad++\notepad++.exe" "%USERPROFILE%\.cfg\ahk\FeelingLucky.ahk",,,myCMD
+WinWaitActive, ahk_exe notepad++.exe
 Send,^s
 Reload
 return

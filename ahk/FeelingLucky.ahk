@@ -3,7 +3,16 @@ ImFeelingLucky:
 DefaultBrowser = chrome.exe
 Search := Clip() ; Capture selected text
 Search := RegExReplace(Search, "^\s*([\s\S]*?)\s*$", "$1") ; Trim spaces
-If (Search <> "")
+If (Search == "")
+	If WinActive("ahk_exe chrome.exe")
+		Msgbox, 111111111
+	Else If WinActive("ahk_exe explorer.exe"){
+		path:=Explorer_GetPath()
+		Msgbox, %path%
+		}
+	Else
+	Run % DefaultBrowser A_Space "https://intouchsupport.com/index.cfm?event=ite.workspace"
+Else If (Search <> "")
 	If RegExMatch(Search, "i)^HKEY_|HKCR|HKCU|HKLM|HKU|HKU|HKCC") { ; If it's a registry key, open RegEdit to that key.
 		Process, Close, regedit.exe
 		RegWrite, REG_SZ, HKEY_CURRENT_USER, Software\Microsoft\Windows\CurrentVersion\Applets\Regedit, Lastkey, %Search% ; This key determines where regedit.exe opens
@@ -25,9 +34,7 @@ If (Search <> "")
 	Else If (InStr(Search, "http") = 1) or RegExMatch(Search, "^[\w-]+\.[\w-]+(\.[\w-]+){0,3}(/.*)?$") ; If it appears to be a URL then run it with the default browser (sometimes I change mine)
 		Run % DefaultBrowser A_Space Search
 	Else
-		Run % DefaultBrowser A_Space "http://www.google.com/search?q=" EncodeURL(Search) "&btnI=1" ; Otherwise conduct an I'm Feeling Lucky search of the term on wikipedia
-Else
-	Run % DefaultBrowser A_Space "https://intouchsupport.com/index.cfm?event=ite.workspace"
+		Run % DefaultBrowser A_Space "http://www.google.com/search?q=" EncodeURL(Search) "&btnI=1"
 Return
 
 ;=============================================[Std.ahk]=============================================
@@ -82,4 +89,74 @@ EncodeURL(Text, FromURL=False) ; Uberi
 	}
 	SetFormat, IntegerFast, %FormatInteger%
 	Return Text
+}
+
+
+Explorer_GetPath(hwnd="")
+{
+if !(window := Explorer_GetWindow(hwnd))
+return ErrorLevel := "ERROR"
+if (window="desktop")
+return A_Desktop
+path := window.LocationURL
+path := RegExReplace(path, "ftp://.*@","ftp://")
+StringReplace, path, path, file:///
+StringReplace, path, path, /, \, All 
+Loop
+If RegExMatch(path, "i)(?<=%)[\da-f]{1,2}", hex)
+StringReplace, path, path, `%%hex%, % Chr("0x" . hex), All
+Else Break
+return path
+}
+Explorer_GetAll(hwnd="")
+{
+return Explorer_Get(hwnd)
+}
+Explorer_GetSelected(hwnd="")
+{
+return Explorer_Get(hwnd,true)
+}
+Explorer_GetWindow(hwnd="")
+{
+WinGet, process, processName, % "ahk_id" hwnd := hwnd? hwnd:WinExist("A")
+WinGetClass class, ahk_id %hwnd%
+if (process!="explorer.exe")
+return
+if (class ~= "(Cabinet|Explore)WClass")
+{
+for window in ComObjCreate("Shell.Application").Windows
+if (window.hwnd==hwnd)
+return window
+}
+else if (class ~= "Progman|WorkerW") 
+return "desktop"
+}
+Explorer_Get(hwnd="",selection=false)
+{
+if !(window := Explorer_GetWindow(hwnd))
+return ErrorLevel := "ERROR"
+if (window="desktop")
+{
+ControlGet, hwWindow, HWND,, SysListView321, ahk_class Progman
+if !hwWindow
+ControlGet, hwWindow, HWND,, SysListView321, A
+ControlGet, files, List, % ( selection ? "Selected":"") "Col1",,ahk_id %hwWindow%
+base := SubStr(A_Desktop,0,1)=="\" ? SubStr(A_Desktop,1,-1) : A_Desktop
+Loop, Parse, files, `n, `r
+{
+path := base "\" A_LoopField
+IfExist %path%
+ret .= path "`n"
+}
+}
+else
+{
+if selection
+collection := window.document.SelectedItems
+else
+collection := window.document.Folder.Items
+for item in collection
+ret .= item.path "`n"
+}
+return Trim(ret,"`n")
 }
