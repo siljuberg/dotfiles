@@ -1,38 +1,39 @@
 RAlt::
-ImFeelingLucky:
-DefaultBrowser = chrome.exe
-Search := Clip() ; Capture selected text
-Search := RegExReplace(Search, "^\s*([\s\S]*?)\s*$", "$1") ; Trim spaces
-If (Search == "")
-	If WinActive("ahk_exe chrome.exe")
-		Msgbox, 111111111
+	ImFeelingLucky:
+	DefaultBrowser = chrome.exe
+	Search := Clip() ; Capture selected text
+	Search := RegExReplace(Search, "^\s*([\s\S]*?)\s*$", "$1") ; Trim spaces
+	If (Search == "")
+		If WinActive("ahk_exe chrome.exe")
+	Msgbox, 111111111
 	Else If WinActive("ahk_exe explorer.exe"){
 		path:=Explorer_GetPath()
 		Msgbox, %path%
-		}
+	}
 	Else
-	Run % DefaultBrowser A_Space "https://intouchsupport.com/index.cfm?event=ite.workspace"
-Else If (Search <> "")
-	If RegExMatch(Search, "i)^HKEY_|HKCR|HKCU|HKLM|HKU|HKU|HKCC") { ; If it's a registry key, open RegEdit to that key.
+		Run % DefaultBrowser A_Space "https://intouchsupport.com/index.cfm?event=ite.workspace"
+	Else If (Search <> "")
+		If RegExMatch(Search, "i)^HKEY_|HKCR|HKCU|HKLM|HKU|HKU|HKCC") {
+		; If it's a registry key, open RegEdit to that key.
 		Process, Close, regedit.exe
 		RegWrite, REG_SZ, HKEY_CURRENT_USER, Software\Microsoft\Windows\CurrentVersion\Applets\Regedit, Lastkey, %Search% ; This key determines where regedit.exe opens
 		Run regedit.exe, , Max
 	}
 	Else If RegExMatch(Search, "^\d+\.\d+\.\d+\.\d+$") ; If it's an IP address, look it up
-		Run %DefaultBrowser% http://whatismyipaddress.com/ip/%Search%
-	Else If (InStr(Search, ":\") = 2) or (InStr(Search, "\\") = 1) or (InStr(Search, "%") = 1) { ; If it appears to be a filepath, run it
+	Run %DefaultBrowser% http://whatismyipaddress.com/ip/%Search%
+	Else If (InStr(Search, ":\") = 2) or (InStr(Search, "\\") = 1) or (InStr(Search, "%") = 1) {
+		; If it appears to be a filepath, run it
 		Transform, Search, Deref, %Search%
 		Run %Search%
-		}		
-	Else If (RegExMatch(Search, "\d\d\d\d\d")) { ; If it appears to be a filepath, run it
+	}else  If (RegExMatch(Search, "\d\d\d\d\d"))  {
+		; If it appears to be a filepath, run it
 		If (Search>5000000)
 			Run % DefaultBrowser A_Space "https://intouchsupport.com/index.cfm?event=ITE.edit&contentid="Search
 		Else If (Search>5000)
 			Run % DefaultBrowser A_Space "https://dev.azure.com/slb-swt/Flow_Assurance/_workitems/edit/"Search	
-			;Run % DefaultBrowser A_Space "https://www.customercarecenter.slb.com/saw/Request/"Search
-		}		
-	Else If (InStr(Search, "http") = 1) or RegExMatch(Search, "^[\w-]+\.[\w-]+(\.[\w-]+){0,3}(/.*)?$") ; If it appears to be a URL then run it with the default browser (sometimes I change mine)
-		Run % DefaultBrowser A_Space Search
+		;Run % DefaultBrowser A_Space "https://www.customercarecenter.slb.com/saw/Request/"Search
+	}else  If (InStr(Search, "http") = 1) or RegExMatch(Search, "^[\w-]+\.[\w-]+(\.[\w-]+) {0,3}(/.*)?$") ; If it appears to be a URL then run it with the default browser (sometimes I change mine)
+	Run % DefaultBrowser A_Space Search
 	Else
 		Run % DefaultBrowser A_Space "http://www.google.com/search?q=" EncodeURL(Search) "&btnI=1"
 Return
@@ -46,7 +47,7 @@ Clip(Text="", Reselect="") ; http://www.autohotkey.com/forum/viewtopic.php?p=467
 		If (Clipboard == LastClip)
 			Clipboard := BackUpClip
 		BackUpClip := LastClip := Stored := ""
-	} Else {
+	}else  {
 		If !Stored {
 			Stored := True
 			BackUpClip := ClipboardAll
@@ -56,7 +57,7 @@ Clip(Text="", Reselect="") ; http://www.autohotkey.com/forum/viewtopic.php?p=467
 		If (Text = "") {
 			Send, ^c
 			ClipWait, LongCopy ? 0.5 : 0.25
-		} Else {
+		}else  {
 			Clipboard := LastClip := Text
 			ClipWait, 10
 			Send, ^v
@@ -80,9 +81,9 @@ EncodeURL(Text, FromURL=False) ; Uberi
 	FormatInteger := A_FormatInteger, FoundPos := 0, SearchFor := FromURL ? "%.." : "[^\w-.~% ]"
 	SetFormat, IntegerFast, Hex
 	If !FromURL
-		StringReplace, Text, Text, `%, `%25, All
+	StringReplace, Text, Text, `%, `%25, All
 	While (FoundPos := RegExMatch(Text, SearchFor, Char, FoundPos + 1))
-		StringReplace, Text, Text, %Char%, % FromURL ? Chr("0x" SubStr(Char, 2)) : "%" SubStr(0 SubStr(Asc(Char), 3), -1), All
+	StringReplace, Text, Text, %Char%, % FromURL ? Chr("0x" SubStr(Char, 2)) : "%" SubStr(0 SubStr(Asc(Char), 3), -1), All
 	If !FromURL {
 		StringReplace, Text, Text, %A_Space%, +, All
 		Text := RegExReplace(Text, "%..", "$U0") ; Only necessary on berban's computer so comment this line out.
@@ -94,69 +95,67 @@ EncodeURL(Text, FromURL=False) ; Uberi
 
 Explorer_GetPath(hwnd="")
 {
-if !(window := Explorer_GetWindow(hwnd))
-return ErrorLevel := "ERROR"
-if (window="desktop")
-return A_Desktop
-path := window.LocationURL
-path := RegExReplace(path, "ftp://.*@","ftp://")
-StringReplace, path, path, file:///
-StringReplace, path, path, /, \, All 
-Loop
-If RegExMatch(path, "i)(?<=%)[\da-f]{1,2}", hex)
-StringReplace, path, path, `%%hex%, % Chr("0x" . hex), All
-Else Break
-return path
+	if !(window := Explorer_GetWindow(hwnd))
+	return ErrorLevel := "ERROR"
+	if (window="desktop")
+		return A_Desktop
+	path := window.LocationURL
+	path := RegExReplace(path, "ftp://.*@","ftp://")
+	StringReplace, path, path, file:///
+	StringReplace, path, path, /, \, All 
+	Loop
+	If RegExMatch(path, "i)(?<=%)[\da-f]{1,2}", hex)
+	StringReplace, path, path, `%%hex%, % Chr("0x" . hex), All
+	Else Break
+	return path
 }
 Explorer_GetAll(hwnd="")
 {
-return Explorer_Get(hwnd)
+	return Explorer_Get(hwnd)
 }
 Explorer_GetSelected(hwnd="")
 {
-return Explorer_Get(hwnd,true)
+	return Explorer_Get(hwnd,true)
 }
 Explorer_GetWindow(hwnd="")
 {
-WinGet, process, processName, % "ahk_id" hwnd := hwnd? hwnd:WinExist("A")
-WinGetClass class, ahk_id %hwnd%
-if (process!="explorer.exe")
-return
-if (class ~= "(Cabinet|Explore)WClass")
-{
-for window in ComObjCreate("Shell.Application").Windows
-if (window.hwnd==hwnd)
-return window
-}
-else if (class ~= "Progman|WorkerW") 
-return "desktop"
+	WinGet, process, processName, % "ahk_id" hwnd := hwnd? hwnd:WinExist("A")
+	WinGetClass class, ahk_id %hwnd%
+	if (process!="explorer.exe")
+		return
+	if (class ~= "(Cabinet|Explore)WClass")
+	{
+		for window in ComObjCreate("Shell.Application").Windows
+		if (window.hwnd==hwnd)
+			return window
+	}
+	else if (class ~= "Progman|WorkerW") 
+		return "desktop"
 }
 Explorer_Get(hwnd="",selection=false)
 {
-if !(window := Explorer_GetWindow(hwnd))
-return ErrorLevel := "ERROR"
-if (window="desktop")
-{
-ControlGet, hwWindow, HWND,, SysListView321, ahk_class Progman
-if !hwWindow
-ControlGet, hwWindow, HWND,, SysListView321, A
-ControlGet, files, List, % ( selection ? "Selected":"") "Col1",,ahk_id %hwWindow%
-base := SubStr(A_Desktop,0,1)=="\" ? SubStr(A_Desktop,1,-1) : A_Desktop
-Loop, Parse, files, `n, `r
-{
-path := base "\" A_LoopField
-IfExist %path%
-ret .= path "`n"
-}
-}
-else
-{
-if selection
-collection := window.document.SelectedItems
-else
-collection := window.document.Folder.Items
-for item in collection
-ret .= item.path "`n"
-}
-return Trim(ret,"`n")
-}
+	if !(window := Explorer_GetWindow(hwnd))
+	return ErrorLevel := "ERROR"
+	if (window="desktop")
+	{
+		ControlGet, hwWindow, HWND,, SysListView321, ahk_class Progman
+		if !hwWindow
+		ControlGet, hwWindow, HWND,, SysListView321, A
+		ControlGet, files, List, % ( selection ? "Selected":"") "Col1",,ahk_id %hwWindow%
+		base := SubStr(A_Desktop,0,1)=="\" ? SubStr(A_Desktop,1,-1) : A_Desktop
+		Loop, Parse, files, `n, `r
+		{
+			path := base "\" A_LoopField
+			IfExist %path%
+			ret .= path "`n"
+		}
+	}else  {
+		if selection
+		collection := window.document.SelectedItems
+		else
+			collection := window.document.Folder.Items
+		for item in collection
+		ret .= item.path "`n"
+	}
+	return Trim(ret,"`n")
+}              
