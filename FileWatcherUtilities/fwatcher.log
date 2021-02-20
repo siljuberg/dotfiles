@@ -632,3 +632,21 @@
 [19-Feb-21 10:21:12] [Info] Application started.
 [19-Feb-21 10:21:12] [Info] Daemon 'zip' is starting.
 [19-Feb-21 10:21:12] [Info] Daemon 'zip' is started.
+[20-Feb-21 07:35:25] [Info] File or folder renamed 'C:\Users\msiljuberg\Downloads\DBGpPlugin_0_13b_dll.zip'.
+[20-Feb-21 07:35:25] [Info] Daemon 'zip' started '"C:\Users\msiljuberg\.cfg\win10\autoExtractZipFiles.bat"' 13580 process with '' arguments and with '' verb. Processes to run: 0.
+[20-Feb-21 07:35:25] [Info] File or folder changed 'C:\Users\msiljuberg\Downloads\DBGpPlugin_0_13b_dll.zip'.
+[20-Feb-21 07:35:25] [Info] File or folder changed 'C:\Users\msiljuberg\Downloads\DBGpPlugin_0_13b_dll.zip'.
+[20-Feb-21 07:35:25] [Info] File or folder changed 'C:\Users\msiljuberg\Downloads\DBGpPlugin_0_13b_dll.zip'.
+[20-Feb-21 07:35:26] [Info] Process 13580 started by 'zip' daemon has exited with exit code 0.
+[20-Feb-21 07:35:26] [Info] Daemon 'zip' started '"C:\Users\msiljuberg\.cfg\win10\autoExtractZipFiles.bat"' 16988 process with '' arguments and with '' verb. Processes to run: 2.
+[20-Feb-21 07:35:26] [Info] Process 16988 started by 'zip' daemon has exited with exit code 0.
+[20-Feb-21 07:35:26] [Info] Daemon 'zip' started '"C:\Users\msiljuberg\.cfg\win10\autoExtractZipFiles.bat"' 13836 process with '' arguments and with '' verb. Processes to run: 1.
+[20-Feb-21 07:35:26] [Info] Process 13836 started by 'zip' daemon has exited with exit code 0.
+[20-Feb-21 07:35:26] [Info] Daemon 'zip' started '"C:\Users\msiljuberg\.cfg\win10\autoExtractZipFiles.bat"' 20636 process with '' arguments and with '' verb. Processes to run: 0.
+[20-Feb-21 07:35:26] [Info] Process 20636 started by 'zip' daemon has exited with exit code 0.
+[20-Feb-21 08:28:52] [Info] Daemon 'zip' is stopped.
+[20-Feb-21 08:28:52] [Info] All processes have exited.
+[20-Feb-21 08:28:52] [Info] Application stopped.
+[20-Feb-21 08:29:40] [Info] Application started.
+[20-Feb-21 08:29:40] [Info] Daemon 'zip' is starting.
+[20-Feb-21 08:29:40] [Info] Daemon 'zip' is started.

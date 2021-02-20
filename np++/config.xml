@@ -22,16 +22,17 @@
         <Filter name="" />
         <Filter name="" />
         <Filter name="" />
+        <Filter name="" />
+        <Find name="doc" />
+        <Find name="documents" />
+        <Find name="#C" />
+        <Find name="RAlt" />
         <Find name="send" />
         <Find name="#R" />
         <Find name="#Q" />
         <Find name="A_Space" />
         <Find name="alt" />
         <Find name="multiflash" />
-        <Find name="kbc" />
-        <Find name="#J" />
-        <Find name="$" />
-        <Find name="usersupp" />
         <Replace name="\r\n" />
         <Replace name="LV" />
         <Replace name=" " />
@@ -44,21 +45,21 @@
         <Replace name="\r\n,&#x00C6;" />
     </FindHistory>
     <History nbMaxFile="15" inSubMenu="no" customLength="-1">
-        <File filename="C:\Users\msiljuberg\AppData\Local\Packages\Microsoft.Windows.ShellExperienceHost_cw5n1h2txyewy\TempState\ScreenClip\{CF5B8567-8867-4752-81F4-521C1A805FD4}.png" />
-        <File filename="C:\Users\msiljuberg\.cfg\vsCode\pst2020.bat" />
-        <File filename="C:\Users\msiljuberg\.cfg\win10\ContextMenuCleanup\disableContextMenus.bat" />
-        <File filename="C:\Users\msiljuberg\.cfg\ahk\misc.ahk" />
-        <File filename="C:\Users\msiljuberg\Desktop\conversationHistory.txt" />
-        <File filename="C:\Users\msiljuberg\AppData\Local\Temp\PIPESIM\8156\Src - P_T profile.out" />
-        <File filename="C:\Users\msiljuberg\.cfg\winMerge\lineFilters.reg" />
-        <File filename="D:\TIC\7650979_SvetlanaChoke\svar.txt" />
-        <File filename="C:\Users\msiljuberg\Google Drive\SLB\_defaultReply.txt" />
         <File filename="C:\Users\msiljuberg\Google Drive\SLB\info_SLB.txt" />
         <File filename="C:\Users\msiljuberg\Downloads\Pronosticos29012021_7652517_03.xml" />
         <File filename="C:\Users\msiljuberg\Downloads\canopy-configuration_7644643_01.log" />
         <File filename="C:\Users\msiljuberg\canopy-installation.log" />
-        <File filename="C:\Users\msiljuberg\.cfg\ahk\winConfig.ahk" />
+        <File filename="D:\TIC\_documentation\Optimizer\tmp.txt" />
+        <File filename="C:\tmp\new 1.txt.ahk" />
+        <File filename="C:\Users\msiljuberg\Downloads\README.txt" />
+        <File filename="C:\Users\msiljuberg\.cfg\ahk\new 1.txt" />
+        <File filename="C:\Users\msiljuberg\.cfg\ahk\FeelingLucky.ahk.bak" />
+        <File filename="C:\Users\msiljuberg\.cfg\ahk\FeelingLucky.ahk - Copy.bak" />
+        <File filename="C:\Users\msiljuberg\.cfg\ahk\work.ahk" />
+        <File filename="C:\Users\msiljuberg\.cfg\ahk\PersonalNotes.txt" />
+        <File filename="C:\Users\msiljuberg\.cfg\ahk\FeelingLucky.ahk - Copy.bak.ahk" />
         <File filename="C:\Users\msiljuberg\.cfg\ahk\FeelingLucky.ahk" />
+        <File filename="C:\Users\msiljuberg\.cfg\ahk\winConfig.ahk" />
     </History>
     <ProjectPanels>
         <ProjectPanel id="0" workSpaceFile="" />
@@ -72,8 +73,8 @@
         <GUIConfig name="ScintillaViewsSplitter">vertical</GUIConfig>
         <GUIConfig name="UserDefineDlg" position="undocked">hide</GUIConfig>
         <GUIConfig name="TabSetting" replaceBySpace="no" size="4" />
-        <GUIConfig name="AppPosition" x="-3327" y="120" width="2041" height="1717" isMaximized="no" />
-        <GUIConfig name="FindWindowPosition" left="1019" top="115" right="1901" bottom="562" />
+        <GUIConfig name="AppPosition" x="400" y="805" width="2446" height="1853" isMaximized="yes" />
+        <GUIConfig name="FindWindowPosition" left="-2203" top="643" right="-1321" bottom="1090" />
         <GUIConfig name="FinderConfig" wrappedLines="no" />
         <GUIConfig name="noUpdate" intervalDays="15" nextUpdateDate="20200324">yes</GUIConfig>
         <GUIConfig name="Auto-detection">auto</GUIConfig>
@@ -112,13 +113,14 @@
         <GUIConfig name="ScintillaPrimaryView" lineNumberMargin="show" lineNumberDynamicWidth="yes" bookMarkMargin="show" indentGuideLine="show" folderMarkStyle="box" lineWrapMethod="aligned" currentLineHilitingShow="show" scrollBeyondLastLine="no" rightClickKeepsSelection="no" disableAdvancedScrolling="no" wrapSymbolShow="hide" Wrap="yes" borderEdge="yes" isEdgeBgMode="no" edgeMultiColumnPos="" zoom="7" zoom2="4" whiteSpaceShow="hide" eolShow="hide" borderWidth="2" smoothFont="no" />
         <GUIConfig name="DockingManager" leftWidth="200" rightWidth="200" topHeight="200" bottomHeight="232">
             <FloatingWindow cont="4" x="673" y="966" width="1181" height="1165" />
-            <PluginDlg pluginName="Notepad++::InternalFunction" id="0" curr="3" prev="4" isVisible="yes" />
+            <PluginDlg pluginName="Notepad++::InternalFunction" id="0" curr="3" prev="4" isVisible="no" />
             <PluginDlg pluginName="dummy" id="0" curr="3" prev="-1" isVisible="yes" />
             <PluginDlg pluginName="ComparePlugin.dll" id="11" curr="1" prev="-1" isVisible="no" />
             <ActiveTabs cont="0" activeTab="-1" />
             <ActiveTabs cont="1" activeTab="-1" />
             <ActiveTabs cont="2" activeTab="-1" />
             <ActiveTabs cont="3" activeTab="-1" />
+            <ActiveTabs cont="4" activeTab="-1" />
         </GUIConfig>
     </GUIConfigs>
 </NotepadPlus>

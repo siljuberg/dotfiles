@@ -27,8 +27,6 @@
 ;#F11:: Sendinput, 
 #F12::Run %_MSCRIPT%\clearAll.cmd
 
-#C::Run explorer.exe "E:\P2\"
-+#C:: Sendinput, E:\P2
 ;***********Open PIPESIM temp folder, sort by date modified, select latest***********
 #F1::
 Run explorer.exe "%TEMP%\PIPESIM"

@@ -6,6 +6,10 @@
 ;**********************************
 ; `	Escape character (backtic upper left on keyboard below Esc character)
 ;**********************************
+
+#NoEnv
+EnvGet, USERPROFILE, USERPROFILE
+
 ; %userprofile%\.cfg\ahk\work.ahk
 ; Other AHK scripts:
 SetWorkingDir, %userprofile%\.cfg\ahk
@@ -18,8 +22,13 @@ SetWorkingDir, %userprofile%\.cfg\ahk
 ExitApp
 Return
 
+#C:: ; testing key
+Msgbox %USERPROFILE%
+MsgBox %WinDir%
+return
+
+
 ;***********Variables ***********
-;userprofile := EnvGet("userprofile")
 ;Keypirinha := "%userprofile%\Google Drive\TEK\Keypirinha\keypirinha.exe"
 ;***********GENERAL***********
 
