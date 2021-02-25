@@ -12,10 +12,9 @@ EnvGet, USERPROFILE, USERPROFILE
 EnvGet, TEMP, TEMP
 RAlt:: ; When keyboard layout is US
 ImFeelingLucky()
-Return
+
 LCtrl & RAlt:: ; When keyboard layout is Norwegian. "Altgr "
 ImFeelingLucky()
-Return
 
 ImFeelingLucky(){
 	DefaultBrowser = chrome.exe

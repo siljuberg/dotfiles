@@ -12,17 +12,15 @@
 EnvGet, USERPROFILE, USERPROFILE
 EnvGet, TEMP, TEMP
 
-; %userprofile%\.cfg\ahk\work.ahk
+
 ; Other AHK scripts:
 SetWorkingDir, %userprofile%\.cfg\ahk
 #Include work.ahk	; Work related AHK scripts
-
-;#Include FeelingLucky.ahk
-
+#Include FeelingLucky.ahk
 
 ; Abort any script:
 ^Escape::
-ExitApp
+;ExitApp
 Return
 
 #C:: ; testing key
