@@ -7,15 +7,18 @@
 ; `	Escape character (backtic upper left on keyboard below Esc character)
 ;**********************************
 
+;***********Variables ***********
 #NoEnv
 EnvGet, USERPROFILE, USERPROFILE
+EnvGet, TEMP, TEMP
 
 ; %userprofile%\.cfg\ahk\work.ahk
 ; Other AHK scripts:
 SetWorkingDir, %userprofile%\.cfg\ahk
 #Include work.ahk	; Work related AHK scripts
-;#Include misc.ahk
-#Include FeelingLucky.ahk
+
+;#Include FeelingLucky.ahk
+
 
 ; Abort any script:
 ^Escape::
@@ -23,16 +26,39 @@ ExitApp
 Return
 
 #C:: ; testing key
-Msgbox %USERPROFILE%
-MsgBox %WinDir%
+Clipboard:=
+Send, ^c
+If Clipboard is integer
+	Msgbox "yes"
+else
+	Msgbox "no"
 return
 
-
-;***********Variables ***********
-;Keypirinha := "%userprofile%\Google Drive\TEK\Keypirinha\keypirinha.exe"
 ;***********GENERAL***********
 
-;RAlt::AppsKey			; Right alt key acts as Shift+F10
+;*******************************************
+;***********Num Lock to searches ***********
+;*******************************************
+SetNumLockState, AlwaysOn ;Forces Num Lock to stay on permanently
+numlock::
+If WinActive("ahk_exe notepad++.exe"){
+	Send ^c
+	Send ^f
+	Send ^v
+	Send !o
+}
+Else If WinActive("ahk_exe Chrome.exe"){
+	Send ^c
+	Send ^f
+	Send ^v
+}
+Else If WinActive("ahk_exe devenv.exe"){
+	Send +^f
+	Send {end}
+	Send .*
+}
+return
+
 +CapsLock::CapsLock		; Remap Shift-Capslock to represent Capslock
 CapsLock::Enter			; Remap Capslock to represent Enter
 
@@ -95,16 +121,6 @@ Send,^s
 Reload
 return
 ;***********
-;**************Pass highlighted text to Google Chrome******************
-; The second line works for searches and the first works for URL's
-#^g::
-Send, ^c
-ClipWait, 2
-;parameter = C:\Program Files\Google\Chrome\Application\chrome.exe "%clipboard%"
-parameter = C:\Program Files\Google\Chrome\Application\chrome.exe https://www.google.com/search?q="%clipboard%"
-Run %parameter%
-return
-;***********
 ;**************Pass highlighted text to ldap******************
 ; The second line works for searches and the first works for URL's
 #^l::
@@ -113,24 +129,3 @@ parameter = C:\Program Files\Google\Chrome\Application\chrome.exe https://direct
 Run %parameter%
 return
 ;***********
-;**************Pass highlighted text to intouch******************
-; The second line works for searches and the first works for URL's
-#^i::
-Send, ^c
-parameter = C:\Program Files (x86)\Google\Chrome\Application\chrome.exe https://intouchsupport.com/index.cfm?event=ITE.edit&contentid="%clipboard%"
-Run %parameter%
-return
-
-;****Copy and (alt-d) search for text in notepad++ ***********
-#^z::
-Send,^c
-WinActivate ahk_exe notepad++.exe
-sleep, 200
-Send,^f
-sleep, 200
-Send,^v
-Send,!o
-Reload
-return
-;***********
-
