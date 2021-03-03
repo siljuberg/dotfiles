@@ -44,7 +44,7 @@ ImFeelingLucky(){
 		If WinActive("ahk_exe chrome.exe")or  WinActive("ahk_exe firefox.exe"){
 			WinGetClass, strClass, A
 			url:=GetCurrentUrlAcc(strClass)
-			If (RegExMatch(url, "idporten\.difi\.no")){
+			If (RegExMatch(url, "idporten\.difi\.no") or RegExMatch(url, "secure\.edb\.com")){
 				phone_fnum()
 			}
 			Else If (RegExMatch(url, "identity\.banknorwegian\.no")){
@@ -52,6 +52,10 @@ ImFeelingLucky(){
 			}
 			
 
+		}
+		Else If WinActive("ahk_exe Slb.Production.Engineering.Desktop.exe"){
+			WinGetTitle, Title, A
+			WinKill, %Title%
 		}
 		Else
 			Run % DefaultBrowser A_Space "https://intouchsupport.com/index.cfm?event=ite.workspace"

@@ -23,13 +23,16 @@ SetWorkingDir, %userprofile%\.cfg\ahk
 ;ExitApp
 Return
 
-#C:: ; testing key
-Clipboard:=
-Send, ^c
-If Clipboard is integer
-	Msgbox "yes"
-else
-	Msgbox "no"
+;::[ ::å
+
+::btw::by the way
+
+
+
+#c:: ; Windows and C closes active window
+WinGetTitle, Title, A
+WinKill, %Title%
+;PostMessage, 0x112, 0xF060,,, %Title%
 return
 
 ;***********GENERAL***********
@@ -72,8 +75,8 @@ F9::End				;**** F9 (and +/- is end)
 #W::Run explorer.exe "%USERPROFILE%\DOWNLOADS"
 +#W:: Sendinput, %USERPROFILE%\DOWNLOADS
 #O::Run explorer.exe "%USERPROFILE%\økonomi"
-#T::Run explorer.exe "%USERPROFILE%\Google Drive"\TEK
-+#T::Run explorer.exe "%USERPROFILE%\Google Drive"\TEK
+;#T::Run explorer.exe "%USERPROFILE%\Google Drive"\TEK
+;+#T::Run explorer.exe "%USERPROFILE%\Google Drive"\TEK
 
 #M:: Sendinput, msiljuberg@slb.com
 

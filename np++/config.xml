@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="Windows-1252" ?>
 <NotepadPlus>
     <!-- The History of opened files list -->
-    <FindHistory nbMaxFindHistoryPath="10" nbMaxFindHistoryFilter="10" nbMaxFindHistoryFind="10" nbMaxFindHistoryReplace="10" matchWord="no" matchCase="no" wrap="yes" directionDown="yes" fifRecuisive="yes" fifInHiddenFolder="no" dlgAlwaysVisible="no" fifFilterFollowsDoc="no" fifFolderFollowsDoc="no" searchMode="1" transparencyMode="1" transparency="150" dotMatchesNewline="no" isSearch2ButtonsMode="no" regexBackward4PowerUser="no">
+    <FindHistory nbMaxFindHistoryPath="10" nbMaxFindHistoryFilter="10" nbMaxFindHistoryFind="10" nbMaxFindHistoryReplace="10" matchWord="no" matchCase="no" wrap="yes" directionDown="yes" fifRecuisive="yes" fifInHiddenFolder="no" dlgAlwaysVisible="no" fifFilterFollowsDoc="no" fifFolderFollowsDoc="no" searchMode="0" transparencyMode="1" transparency="150" dotMatchesNewline="no" isSearch2ButtonsMode="no" regexBackward4PowerUser="no">
         <Filter name="" />
         <Filter name="" />
         <Filter name="" />
@@ -22,17 +22,16 @@
         <Filter name="" />
         <Filter name="" />
         <Filter name="" />
-        <Filter name="" />
-        <Find name="GetWebPageTitle" />
-        <Find name="NumDecode" />
-        <Find name="GetActiveBrowserURL" />
-        <Find name="accObj" />
-        <Find name="GetBrowserURL" />
-        <Find name=":" />
-        <Find name="/" />
+        <Find name="v" />
+        <Find name="#T" />
+        <Find name="num" />
         <Find name="error" />
         <Find name="eror" />
         <Find name="F1" />
+        <Find name="lock" />
+        <Find name="Caps" />
+        <Find name="ock t" />
+        <Find name="activ" />
         <Replace name="\r\n" />
         <Replace name="LV" />
         <Replace name=" " />
@@ -45,21 +44,21 @@
         <Replace name="\r\n,&#x00C6;" />
     </FindHistory>
     <History nbMaxFile="15" inSubMenu="no" customLength="-1">
-        <File filename="D:\TIC\_BI\Excel_command.txt" />
-        <File filename="D:\TIC\7650979_SvetlanaChoke\svar2.txt" />
-        <File filename="D:\TIC\7650979_SvetlanaChoke\book notes.txt" />
-        <File filename="D:\TIC\Constructing downhole networks in Stingray.txt" />
-        <File filename="D:\TIC\PTK\GUID_mapping.txt" />
+        <File filename="C:\Users\msiljuberg\Desktop\pipesim engine\sprm.txt" />
+        <File filename="C:\Users\msiljuberg\Desktop\conversationHistory.txt" />
         <File filename="D:\TIC\M&#x00F8;te Agenda Diskusjon Punkter.txt" />
-        <File filename="D:\TIC\open.sh" />
-        <File filename="C:\Program Files\Notepad++\new 1.txt" />
-        <File filename="C:\Users\msiljuberg\.cfg\ahk\PersonalNotes.md" />
-        <File filename="C:\Users\msiljuberg\Downloads\GetAccData 5.55.ahk" />
-        <File filename="C:\Users\msiljuberg\Google Drive\TEK\SettingsConfig\ahk\fnummer.ahk" />
-        <File filename="C:\Users\msiljuberg\Google Drive\TEK\SettingsConfig\ahk_personal_info\pnum_phone.ahk" />
-        <File filename="C:\Users\msiljuberg\.cfg\ahk\3rdParty\URLfetch.ahk" />
-        <File filename="C:\Users\msiljuberg\.cfg\ahk\winConfig.ahk" />
+        <File filename="C:\Users\msiljuberg\Google Drive\SLB\_defaultReply.txt" />
+        <File filename="C:\Users\msiljuberg\Downloads\workitemhistory\prettyHistory.js" />
+        <File filename="C:\Users\msiljuberg\.cfg\ahk\norwegianCharacters.ahk" />
+        <File filename="C:\Program Files\Schlumberger\PIPESIM2019.3\Developer Tools\User Flow Correlations\Fortran_Code\README.txt" />
+        <File filename="D:\TIC\640097_Kamilia_SinglePHaseOLGAS\svar.txt" />
+        <File filename="D:\TEK\SCRPT\killPipesim.bat" />
+        <File filename="C:\Program Files\Schlumberger\PIPESIM2020.1\Programs\VersionMap.Json" />
+        <File filename="C:\Program Files\Schlumberger\PIPESIM2020.1\Programs\VpcCleanerMap.json" />
+        <File filename="C:\Users\msiljuberg\AppData\Local\Temp\PIPESIM\24680\Enable - P_T profile.out" />
+        <File filename="D:\TIC\640097_Kamilia_SinglePHaseOLGAS\engine keywords.txt" />
         <File filename="C:\Users\msiljuberg\.cfg\ahk\FeelingLucky.ahk" />
+        <File filename="C:\Users\msiljuberg\.cfg\ahk\winConfig.ahk" />
     </History>
     <ProjectPanels>
         <ProjectPanel id="0" workSpaceFile="" />
@@ -73,7 +72,7 @@
         <GUIConfig name="ScintillaViewsSplitter">vertical</GUIConfig>
         <GUIConfig name="UserDefineDlg" position="undocked">hide</GUIConfig>
         <GUIConfig name="TabSetting" replaceBySpace="no" size="4" />
-        <GUIConfig name="AppPosition" x="-2959" y="38" width="2002" height="1941" isMaximized="no" />
+        <GUIConfig name="AppPosition" x="1623" y="507" width="1912" height="1303" isMaximized="no" />
         <GUIConfig name="FindWindowPosition" left="2155" top="635" right="2842" bottom="1082" />
         <GUIConfig name="FinderConfig" wrappedLines="no" />
         <GUIConfig name="noUpdate" intervalDays="15" nextUpdateDate="20200324">yes</GUIConfig>
@@ -110,7 +109,7 @@
         <GUIConfig name="Searching" monospacedFontFindDlg="no" stopFillingFindField="no" findDlgAlwaysVisible="no" confirmReplaceInAllOpenDocs="yes" />
         <GUIConfig name="searchEngine" searchEngineChoice="2" searchEngineCustom="" />
         <GUIConfig name="SmartHighLight" matchCase="no" wholeWordOnly="yes" useFindSettings="no" onAnotherView="no">yes</GUIConfig>
-        <GUIConfig name="ScintillaPrimaryView" lineNumberMargin="show" lineNumberDynamicWidth="yes" bookMarkMargin="show" indentGuideLine="show" folderMarkStyle="box" lineWrapMethod="aligned" currentLineHilitingShow="show" scrollBeyondLastLine="no" rightClickKeepsSelection="no" disableAdvancedScrolling="no" wrapSymbolShow="hide" Wrap="yes" borderEdge="yes" isEdgeBgMode="no" edgeMultiColumnPos="" zoom="10" zoom2="12" whiteSpaceShow="hide" eolShow="hide" borderWidth="2" smoothFont="no" />
+        <GUIConfig name="ScintillaPrimaryView" lineNumberMargin="show" lineNumberDynamicWidth="yes" bookMarkMargin="show" indentGuideLine="show" folderMarkStyle="box" lineWrapMethod="aligned" currentLineHilitingShow="show" scrollBeyondLastLine="no" rightClickKeepsSelection="no" disableAdvancedScrolling="no" wrapSymbolShow="hide" Wrap="yes" borderEdge="yes" isEdgeBgMode="no" edgeMultiColumnPos="" zoom="9" zoom2="4" whiteSpaceShow="hide" eolShow="hide" borderWidth="2" smoothFont="no" />
         <GUIConfig name="DockingManager" leftWidth="200" rightWidth="200" topHeight="200" bottomHeight="294">
             <FloatingWindow cont="4" x="673" y="966" width="1181" height="1165" />
             <PluginDlg pluginName="Notepad++::InternalFunction" id="0" curr="3" prev="4" isVisible="yes" />
@@ -119,8 +118,7 @@
             <ActiveTabs cont="0" activeTab="-1" />
             <ActiveTabs cont="1" activeTab="-1" />
             <ActiveTabs cont="2" activeTab="-1" />
-            <ActiveTabs cont="3" activeTab="0" />
-            <ActiveTabs cont="4" activeTab="-1" />
+            <ActiveTabs cont="3" activeTab="-1" />
         </GUIConfig>
     </GUIConfigs>
 </NotepadPlus>
