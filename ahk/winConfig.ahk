@@ -35,6 +35,15 @@ WinKill, %Title%
 ;PostMessage, 0x112, 0xF060,,, %Title%
 return
 
+#z:: ; Trim data for Excel
+Send, ^c
+clipwait,2 	
+StringReplace, Clipboard, Clipboard,%A_Space%, , All; Remove spaces
+StringReplace, Clipboard, Clipboard,–,%A_Tab%, All	; Replace hyphen with tab
+Clipboard:=RegExReplace(Clipboard, "[A-zæøåÆØÅ]")			; Removes letters
+msgbox %clipboard%
+return
+
 ;***********GENERAL***********
 
 ;*******************************************
@@ -68,8 +77,8 @@ F9::End				;**** F9 (and +/- is end)
 ;Media_Prev::End    ;**** <<   => End
 
 #s::Run explorer.exe "%USERPROFILE%\Google Drive\rabota"
-#E::Run explorer.exe "D:\PA\AnacondaMigration"
-+#E:: Sendinput, D:\PA\AnacondaMigration
+#E::Run explorer.exe "D:\TIC"
++#E:: Sendinput, D:\TIC
 #F::Run explorer.exe "%USERPROFILE%\Google Drive"
 +#F:: Sendinput, %USERPROFILE%\Google Drive
 #W::Run explorer.exe "%USERPROFILE%\DOWNLOADS"

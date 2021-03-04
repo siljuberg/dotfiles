@@ -44,8 +44,6 @@
         <Replace name="\r\n,&#x00C6;" />
     </FindHistory>
     <History nbMaxFile="15" inSubMenu="no" customLength="-1">
-        <File filename="C:\Users\msiljuberg\Desktop\pipesim engine\sprm.txt" />
-        <File filename="C:\Users\msiljuberg\Desktop\conversationHistory.txt" />
         <File filename="D:\TIC\M&#x00F8;te Agenda Diskusjon Punkter.txt" />
         <File filename="C:\Users\msiljuberg\Google Drive\SLB\_defaultReply.txt" />
         <File filename="C:\Users\msiljuberg\Downloads\workitemhistory\prettyHistory.js" />
@@ -59,6 +57,8 @@
         <File filename="D:\TIC\640097_Kamilia_SinglePHaseOLGAS\engine keywords.txt" />
         <File filename="C:\Users\msiljuberg\.cfg\ahk\FeelingLucky.ahk" />
         <File filename="C:\Users\msiljuberg\.cfg\ahk\winConfig.ahk" />
+        <File filename="C:\Users\msiljuberg\Downloads\canopy-installation_7658190_01.log" />
+        <File filename="C:\Users\msiljuberg\Downloads\canopy-configuration_7658190_01.log" />
     </History>
     <ProjectPanels>
         <ProjectPanel id="0" workSpaceFile="" />
@@ -72,7 +72,7 @@
         <GUIConfig name="ScintillaViewsSplitter">vertical</GUIConfig>
         <GUIConfig name="UserDefineDlg" position="undocked">hide</GUIConfig>
         <GUIConfig name="TabSetting" replaceBySpace="no" size="4" />
-        <GUIConfig name="AppPosition" x="1623" y="507" width="1912" height="1303" isMaximized="no" />
+        <GUIConfig name="AppPosition" x="-3177" y="507" width="1912" height="1303" isMaximized="yes" />
         <GUIConfig name="FindWindowPosition" left="2155" top="635" right="2842" bottom="1082" />
         <GUIConfig name="FinderConfig" wrappedLines="no" />
         <GUIConfig name="noUpdate" intervalDays="15" nextUpdateDate="20200324">yes</GUIConfig>
