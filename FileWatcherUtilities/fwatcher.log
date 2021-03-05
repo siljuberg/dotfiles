@@ -674,3 +674,9 @@
 [01-Mar-21 09:09:15] [Info] File or folder renamed 'C:\Users\msiljuberg\Downloads\workitemhistory_20210126.zip'.
 [01-Mar-21 09:09:15] [Info] Daemon 'zip' started '"C:\Users\msiljuberg\.cfg\win10\autoExtractZipFiles.bat"' 16664 process with '' arguments and with '' verb. Processes to run: 0.
 [01-Mar-21 09:09:15] [Info] Process 16664 started by 'zip' daemon has exited with exit code 0.
+[05-Mar-21 15:54:30] [Info] Daemon 'zip' is stopped.
+[05-Mar-21 15:54:30] [Info] All processes have exited.
+[05-Mar-21 15:54:30] [Info] Application stopped.
+[05-Mar-21 15:55:17] [Info] Application started.
+[05-Mar-21 15:55:17] [Info] Daemon 'zip' is starting.
+[05-Mar-21 15:55:17] [Info] Daemon 'zip' is started.

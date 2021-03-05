@@ -50,6 +50,12 @@ ImFeelingLucky(){
 			Else If (RegExMatch(url, "identity\.banknorwegian\.no")){
 				pnum_phone()
 			}
+			Else If (RegExMatch(url, "sauth\.cfs\.slb\.com")){
+				send {tab}
+				send {tab}
+				work_email()
+				send {enter}
+			}
 			
 
 		}

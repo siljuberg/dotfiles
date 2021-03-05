@@ -22,6 +22,9 @@
         <Filter name="" />
         <Filter name="" />
         <Filter name="" />
+        <Find name="wait" />
+        <Find name="return" />
+        <Find name="waid" />
         <Find name="v" />
         <Find name="#T" />
         <Find name="num" />
@@ -29,9 +32,6 @@
         <Find name="eror" />
         <Find name="F1" />
         <Find name="lock" />
-        <Find name="Caps" />
-        <Find name="ock t" />
-        <Find name="activ" />
         <Replace name="\r\n" />
         <Replace name="LV" />
         <Replace name=" " />
@@ -44,8 +44,6 @@
         <Replace name="\r\n,&#x00C6;" />
     </FindHistory>
     <History nbMaxFile="15" inSubMenu="no" customLength="-1">
-        <File filename="D:\TIC\M&#x00F8;te Agenda Diskusjon Punkter.txt" />
-        <File filename="C:\Users\msiljuberg\Google Drive\SLB\_defaultReply.txt" />
         <File filename="C:\Users\msiljuberg\Downloads\workitemhistory\prettyHistory.js" />
         <File filename="C:\Users\msiljuberg\.cfg\ahk\norwegianCharacters.ahk" />
         <File filename="C:\Program Files\Schlumberger\PIPESIM2019.3\Developer Tools\User Flow Correlations\Fortran_Code\README.txt" />
@@ -55,10 +53,12 @@
         <File filename="C:\Program Files\Schlumberger\PIPESIM2020.1\Programs\VpcCleanerMap.json" />
         <File filename="C:\Users\msiljuberg\AppData\Local\Temp\PIPESIM\24680\Enable - P_T profile.out" />
         <File filename="D:\TIC\640097_Kamilia_SinglePHaseOLGAS\engine keywords.txt" />
-        <File filename="C:\Users\msiljuberg\.cfg\ahk\FeelingLucky.ahk" />
-        <File filename="C:\Users\msiljuberg\.cfg\ahk\winConfig.ahk" />
         <File filename="C:\Users\msiljuberg\Downloads\canopy-installation_7658190_01.log" />
         <File filename="C:\Users\msiljuberg\Downloads\canopy-configuration_7658190_01.log" />
+        <File filename="C:\Users\msiljuberg\.cfg\update_git.ps1" />
+        <File filename="C:\Users\msiljuberg\Google Drive\TEK\SettingsConfig\ahk\ahk_personal_info.ahk" />
+        <File filename="C:\Users\msiljuberg\.cfg\ahk\FeelingLucky.ahk" />
+        <File filename="C:\Users\msiljuberg\.cfg\ahk\winConfig.ahk" />
     </History>
     <ProjectPanels>
         <ProjectPanel id="0" workSpaceFile="" />
@@ -72,7 +72,7 @@
         <GUIConfig name="ScintillaViewsSplitter">vertical</GUIConfig>
         <GUIConfig name="UserDefineDlg" position="undocked">hide</GUIConfig>
         <GUIConfig name="TabSetting" replaceBySpace="no" size="4" />
-        <GUIConfig name="AppPosition" x="-3177" y="507" width="1912" height="1303" isMaximized="yes" />
+        <GUIConfig name="AppPosition" x="0" y="0" width="1753" height="1100" isMaximized="no" />
         <GUIConfig name="FindWindowPosition" left="2155" top="635" right="2842" bottom="1082" />
         <GUIConfig name="FinderConfig" wrappedLines="no" />
         <GUIConfig name="noUpdate" intervalDays="15" nextUpdateDate="20200324">yes</GUIConfig>
