@@ -27,7 +27,11 @@ Return
 
 ::btw::by the way
 
-
+#X::
+	selection := FC("explorer","","selection")
+	Loop % selection.len()
+		run % "notepad.exe """ selection[A_Index] """"
+return
 
 #c:: ; Windows and C closes active window
 WinGetTitle, Title, A

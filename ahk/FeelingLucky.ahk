@@ -1,8 +1,8 @@
 
-#Include FC.ahk
-#include Container.ahk
-#include Prefs.ahk
-#include ShellFileOperation.ahk
+#Include 3rdParty\FileContainer\FC.ahk
+#include 3rdParty\FileContainer\Container.ahk
+#include 3rdParty\FileContainer\Prefs.ahk
+#include 3rdParty\FileContainer\ShellFileOperation.ahk
 
 #include 3rdParty\URLfetch.ahk
 
@@ -25,17 +25,19 @@ ImFeelingLucky(){
 	;Search:=Clipboard
 	Search := RegExReplace(Search, "^\s*([\s\S]*?)\s*$", "$1") ; Trim spaces
 	If WinActive("ahk_exe explorer.exe"){
-	
-		paths:=Explorer_GetSelected()	; Get paths of selected files
-		strReplace(Explorer_GetSelected(), "`n",, numSelected)	; Return the number of files selected. Shortcuts does not count. I
-		numSelected += 1
 		selection := FC("explorer","","selection")
+		numFiles:=selection.len()
+		msgbox %numFiles%
 		
-		If (numSelected==1){ ; 1 can mean none or 1 file selected.
-		Run selection[0]
-			Clipboard:=paths ; When one file is selected, copy path to clipboard.
+		
+		If (numFiles==""){ ; If no files are selected, open cmd here
+			Run, %ComSpec%, % FC("explorer","","folder")[1]
 		}
-		Else If (numSelected>1){
+		Else If (numFiles==1){ ; 1 can mean none or 1 file selected.
+			;Run selection[0]
+			Clipboard:=selection ; When one file is selected, copy path to clipboard.
+		}
+		Else If (numFiles>1){
 			msgbox %paths%
 			
 		}
