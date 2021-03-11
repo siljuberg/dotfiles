@@ -19,10 +19,10 @@ Return
 
 ImFeelingLucky(){
 	DefaultBrowser = chrome.exe
-	Search := Clip() ; Capture selected text
-	;Clipboard:=
-	;Send, ^c	
-	;Search:=Clipboard
+	;Search := Clip() ; Capture selected text
+	Clipboard:=
+	Send, ^c	
+	Search:=Clipboard
 	Search := RegExReplace(Search, "^\s*([\s\S]*?)\s*$", "$1") ; Trim spaces
 	If WinActive("ahk_exe explorer.exe"){
 		selection := FC("explorer","","selection")
@@ -35,10 +35,10 @@ ImFeelingLucky(){
 			filepath:=selection[1]
 			SplitPath, filepath, name, dir, ext, name_no_ext, drive
 			If (ext=="pst"){
-				run %ComSpec% /k "C:\Program Files\Schlumberger\PIPESIM2020.1\Programs\psimstub.exe" -X %filepath%
+				Run "C:\Program Files\Schlumberger\PIPESIM2020.1\Programs\psimstub.exe" -X %filepath%
 			}
 			Else If (ext=="tnt"){
-				run %ComSpec% /k "C:\Program Files\Schlumberger\PIPESIM2020.1\Programs\pnetstub.exe" -X %filepath%
+				Run "C:\Program Files\Schlumberger\PIPESIM2020.1\Programs\pnettub.exe" -X %filepath%
 			}
 			
 

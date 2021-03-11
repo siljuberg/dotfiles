@@ -18,6 +18,11 @@ SetWorkingDir, %userprofile%\.cfg\ahk
 #Include work.ahk	; Work related AHK scripts
 #Include FeelingLucky.ahk
 
+#Include 3rdParty\FileContainer\FC.ahk
+#include 3rdParty\FileContainer\Container.ahk
+#include 3rdParty\FileContainer\Prefs.ahk
+#include 3rdParty\FileContainer\ShellFileOperation.ahk
+
 ; Abort any script:
 ^Escape::
 ;ExitApp
@@ -29,8 +34,13 @@ Return
 
 #X::
 	selection := FC("explorer","","selection")
-	Loop % selection.len()
-		run % "notepad.exe """ selection[A_Index] """"
+	numFiles:=selection.len()
+	Loop % selection.len(){
+		a:= selection[A_Index]
+		;msgbox %a%
+		msgbox %numFiles%
+		;run % "notepad.exe """ selection[A_Index] """"
+		}
 return
 
 #c:: ; Windows and C closes active window
@@ -44,6 +54,7 @@ Send, ^c
 clipwait,2 	
 StringReplace, Clipboard, Clipboard,%A_Space%, , All; Remove spaces
 StringReplace, Clipboard, Clipboard,–,%A_Tab%, All	; Replace hyphen with tab
+StringReplace, Clipboard, Clipboard,`,,., All	; Replace comma with dot
 Clipboard:=RegExReplace(Clipboard, "[A-zæøåÆØÅ]")			; Removes letters
 msgbox %clipboard%
 return
