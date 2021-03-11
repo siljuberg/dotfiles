@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="Windows-1252" ?>
 <NotepadPlus>
     <!-- The History of opened files list -->
-    <FindHistory nbMaxFindHistoryPath="10" nbMaxFindHistoryFilter="10" nbMaxFindHistoryFind="10" nbMaxFindHistoryReplace="10" matchWord="no" matchCase="no" wrap="yes" directionDown="yes" fifRecuisive="yes" fifInHiddenFolder="no" dlgAlwaysVisible="no" fifFilterFollowsDoc="no" fifFolderFollowsDoc="no" searchMode="0" transparencyMode="1" transparency="150" dotMatchesNewline="no" isSearch2ButtonsMode="no" regexBackward4PowerUser="no">
+    <FindHistory nbMaxFindHistoryPath="10" nbMaxFindHistoryFilter="10" nbMaxFindHistoryFind="10" nbMaxFindHistoryReplace="10" matchWord="no" matchCase="no" wrap="yes" directionDown="yes" fifRecuisive="yes" fifInHiddenFolder="no" dlgAlwaysVisible="no" fifFilterFollowsDoc="no" fifFolderFollowsDoc="no" searchMode="1" transparencyMode="1" transparency="150" dotMatchesNewline="no" isSearch2ButtonsMode="no" regexBackward4PowerUser="no">
         <Filter name="" />
         <Filter name="" />
         <Filter name="" />
@@ -22,16 +22,18 @@
         <Filter name="" />
         <Filter name="" />
         <Filter name="" />
-        <Find name="wait" />
-        <Find name="return" />
-        <Find name="waid" />
-        <Find name="v" />
-        <Find name="#T" />
-        <Find name="num" />
+        <Find name=";" />
+        <Find name="admin" />
         <Find name="error" />
-        <Find name="eror" />
-        <Find name="F1" />
-        <Find name="lock" />
+        <Find name="lv" />
+        <Find name="command line" />
+        <Find name="open command line here" />
+        <Find name="extension" />
+        <Find name="exte" />
+        <Find name="changed" />
+        <Find name="wait" />
+        <Replace name="\n" />
+        <Replace name="lx" />
         <Replace name="\r\n" />
         <Replace name="LV" />
         <Replace name=" " />
@@ -40,25 +42,23 @@
         <Replace name="C:\TIC" />
         <Replace name="C:" />
         <Replace name="LS" />
-        <Replace name='\r\n,&quot;' />
-        <Replace name="\r\n,&#x00C6;" />
     </FindHistory>
     <History nbMaxFile="15" inSubMenu="no" customLength="-1">
-        <File filename="D:\TEK\SCRPT\killPipesim.bat" />
-        <File filename="C:\Program Files\Schlumberger\PIPESIM2020.1\Programs\VersionMap.Json" />
-        <File filename="C:\Program Files\Schlumberger\PIPESIM2020.1\Programs\VpcCleanerMap.json" />
-        <File filename="C:\Users\msiljuberg\AppData\Local\Temp\PIPESIM\24680\Enable - P_T profile.out" />
-        <File filename="D:\TIC\640097_Kamilia_SinglePHaseOLGAS\engine keywords.txt" />
-        <File filename="C:\Users\msiljuberg\Downloads\canopy-installation_7658190_01.log" />
+        <File filename="C:\Users\msiljuberg\.cfg\ahk\sandbox.ahk" />
+        <File filename="C:\Users\msiljuberg\.cfg\ahk\PersonalNotes.md" />
+        <File filename="C:\Users\msiljuberg\.cfg\ahk\3rdParty\FileContainer\FC.ahk" />
+        <File filename="C:\Users\msiljuberg\.cfg\ahk\3rdParty\FileContainer\Container.ahk" />
+        <File filename="C:\Users\msiljuberg\.cfg\ahk\3rdParty\FileContainer\ShellFileOperation.ahk" />
+        <File filename="C:\Users\msiljuberg\.cfg\ahk\3rdParty\FileContainer\Prefs.ahk" />
+        <File filename="C:\Users\msiljuberg\Desktop\new 1.txt" />
+        <File filename="C:\Program Files\Schlumberger\PIPESIM2019.4\Developer Tools\Python Toolkit\examples\create_GIS_network.py" />
+        <File filename="C:\Users\msiljuberg\Google Drive\SLB\_defaultReply.txt" />
         <File filename="C:\Users\msiljuberg\Downloads\canopy-configuration_7658190_01.log" />
-        <File filename="C:\Users\msiljuberg\.cfg\ahk\52165" />
-        <File filename="C:\Users\msiljuberg\.cfg\update_git.ps1" />
-        <File filename="C:\Users\msiljuberg\Google Drive\TEK\SettingsConfig\ahk\ahk_personal_info.ahk" />
+        <File filename="C:\Users\msiljuberg\Downloads\canopy-installation_7658190_01.log" />
+        <File filename="C:\Program Files\Schlumberger\PIPESIM2020.2\Programs\VersionMap.Json" />
+        <File filename="C:\Users\msiljuberg\Google Drive\&#x00F8;konomi\93550936257.txt" />
         <File filename="C:\Users\msiljuberg\.cfg\ahk\FeelingLucky.ahk" />
         <File filename="C:\Users\msiljuberg\.cfg\ahk\winConfig.ahk" />
-        <File filename="C:\Users\msiljuberg\.cfg\FileWatcherUtilities\_readMe_morten.txt" />
-        <File filename="C:\Users\msiljuberg\.cfg\np++\config.xml" />
-        <File filename="C:\Users\msiljuberg\.cfg\FileWatcherUtilities\fwatcher.log" />
     </History>
     <ProjectPanels>
         <ProjectPanel id="0" workSpaceFile="" />
@@ -72,8 +72,8 @@
         <GUIConfig name="ScintillaViewsSplitter">vertical</GUIConfig>
         <GUIConfig name="UserDefineDlg" position="undocked">hide</GUIConfig>
         <GUIConfig name="TabSetting" replaceBySpace="no" size="4" />
-        <GUIConfig name="AppPosition" x="0" y="0" width="1753" height="1057" isMaximized="no" />
-        <GUIConfig name="FindWindowPosition" left="2155" top="635" right="2842" bottom="1082" />
+        <GUIConfig name="AppPosition" x="0" y="0" width="1597" height="1100" isMaximized="yes" />
+        <GUIConfig name="FindWindowPosition" left="616" top="301" right="1303" bottom="748" />
         <GUIConfig name="FinderConfig" wrappedLines="no" />
         <GUIConfig name="noUpdate" intervalDays="15" nextUpdateDate="20200324">yes</GUIConfig>
         <GUIConfig name="Auto-detection">auto</GUIConfig>
@@ -109,8 +109,8 @@
         <GUIConfig name="Searching" monospacedFontFindDlg="no" stopFillingFindField="no" findDlgAlwaysVisible="no" confirmReplaceInAllOpenDocs="yes" />
         <GUIConfig name="searchEngine" searchEngineChoice="2" searchEngineCustom="" />
         <GUIConfig name="SmartHighLight" matchCase="no" wholeWordOnly="yes" useFindSettings="no" onAnotherView="no">yes</GUIConfig>
-        <GUIConfig name="ScintillaPrimaryView" lineNumberMargin="show" lineNumberDynamicWidth="yes" bookMarkMargin="show" indentGuideLine="show" folderMarkStyle="box" lineWrapMethod="aligned" currentLineHilitingShow="show" scrollBeyondLastLine="no" rightClickKeepsSelection="no" disableAdvancedScrolling="no" wrapSymbolShow="hide" Wrap="yes" borderEdge="yes" isEdgeBgMode="no" edgeMultiColumnPos="" zoom="9" zoom2="4" whiteSpaceShow="hide" eolShow="hide" borderWidth="2" smoothFont="no" />
-        <GUIConfig name="DockingManager" leftWidth="200" rightWidth="200" topHeight="200" bottomHeight="294">
+        <GUIConfig name="ScintillaPrimaryView" lineNumberMargin="show" lineNumberDynamicWidth="yes" bookMarkMargin="show" indentGuideLine="show" folderMarkStyle="box" lineWrapMethod="aligned" currentLineHilitingShow="show" scrollBeyondLastLine="no" rightClickKeepsSelection="no" disableAdvancedScrolling="no" wrapSymbolShow="hide" Wrap="yes" borderEdge="yes" isEdgeBgMode="no" edgeMultiColumnPos="" zoom="3" zoom2="4" whiteSpaceShow="hide" eolShow="hide" borderWidth="2" smoothFont="no" />
+        <GUIConfig name="DockingManager" leftWidth="200" rightWidth="200" topHeight="200" bottomHeight="568">
             <FloatingWindow cont="4" x="673" y="966" width="1181" height="1165" />
             <PluginDlg pluginName="Notepad++::InternalFunction" id="0" curr="3" prev="4" isVisible="yes" />
             <PluginDlg pluginName="dummy" id="0" curr="3" prev="-1" isVisible="yes" />
