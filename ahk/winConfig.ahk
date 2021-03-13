@@ -10,6 +10,7 @@
 ;***********Variables ***********
 #NoEnv
 EnvGet, USERPROFILE, USERPROFILE
+EnvGet, LOCALAPPDATA, LOCALAPPDATA
 EnvGet, TEMP, TEMP
 
 
